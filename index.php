@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -12,6 +17,7 @@
 		<link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>css/touchTouch.css">
 		<link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>css/camera.css">
 		<link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>css/style.css">
+		<link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>css/grid.css">
 		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/jquery.js"></script>
 		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/jquery-migrate-1.1.1.js"></script>
 		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/script.js"></script>
@@ -116,7 +122,7 @@
 #logo {
     font-family: 'Bahnschrift', Courier, monospace;
     cursor: pointer;
-    padding-left: 10px;
+    
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: xx-large;
@@ -170,6 +176,8 @@
 			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
 				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
 			</a>
+            git remote add origin https://github.com/tthale34/bluewnovelty.git
+            git push -u origin main
 		</div>
 		<![endif]-->
 		<!--[if lt IE 9]>
@@ -185,27 +193,27 @@
           <div class="container">
               <div class="row">
                   <div class="grid_12">
-                    <h1 id="logo" (click)="nav('')">Blue Novelty</h1>
+                    <h1 id="logo">Blue Novelty</h1>
                       <div class="search">
-                      <form class="example" action="/action_page.php">
-  <!--<input type="text" placeholder="Search.." name="search">-->
-  <button type="submit"><i class="fa fa-search"></i></button>
-  </form>
-  </div>
+                        <form class="example" action="./action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
                       <div class="menu_block">
                           <nav class="horizontal-nav full-width horizontalNav-notprocessed">
-                              <ul class="sf-menu" *ngIf="!check_login">
+                              <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
                                   <!--<li><a class="btn btn-primary" (click)="nav('login')">LOGIN</a></li>
                                   <li><a class="btn btn-primary" (click)="nav('sign-up')">SIGN UP</a></li>
                                   <li><a (click)="nav('sign-up')">PHOTOGRAPHERS</a></li>
                                   <li><a  (click)="nav('sign-up')">HOW TO REGISTER</a></li>-->
-                                  <li><a (click)="nav('login')">LOGIN </a></li>
-                                  <li><a  (click)="nav('sign-up')">SIGN UP</a></li>
+                                  <li><a href="./login_page.php">LOGIN</a></li>
+                                  <li><a href="./signup_page.php">SIGN UP</a></li>
                                   <li><a (click)="nav('sign-up')">PHOTOGRAPHERS</a></li>
-                                  <li><a  (click)="nav('sign-up')">HOW TO REGISTER</a></li>
+                                  <li><a (click)="nav('sign-up')">HOW TO REGISTER</a></li>
                               </ul>
-                              <ul class="sf-menu" *ngIf="check_login">
-                                <li><a (click)="logout()">LOGOUT </a></li>
+                              <ul class="sf-menu" <?php if(!isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
+                                <li><a href="./logout.php">LOGOUT </a></li>
                             </ul>
                           </nav>
                           <div class="clear"></div>
@@ -228,7 +236,6 @@
           <div class="tutorial_text tutorial_text2" responsive>“Book a Photographer or freelance career in content creating Videographer Now.”.
           </div>
       </div><br><br>
-
       <!--=====================Content======================-->
 <!-- <center> -->
  <div class="gallery_main">
