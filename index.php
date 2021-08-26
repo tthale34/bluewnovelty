@@ -61,115 +61,97 @@ session_start();
 		});
 		</script>
         <style type="text/css">
-        .home_image{
-    width: 49%;height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.tutorial_text {
-    position: absolute;
-    width: 80px;
-    color: black;
-    font-weight: lighter;
-    font-size: xx-large;
+				.home_image{
+						width: 100%;
+						height: 100%;
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+				}
+				.tutorial_text {
+						position: absolute;
+						width: 80px;
+						color: black;
+						font-weight: 700;
+						font-size: 61px;
+						font-family: Helvetica;
+				}
+
+				.tutorial_text1,
+				.tutorial_text2 {
+						color: white;
+						opacity: 100%;
+						cursor: pointer;
+				}
+
+				.tutorial_text1:hover,
+				.tutorial_text2:hover {
+						color: #1a3fe2;
+						background-color: white;
+						opacity: 0.6;
+						cursor: pointer;
+				}
+
+				.tutorial_text1 {
+					top: 75px;
+						left: 873px;
+						padding: 86px;
+						width: 571px;
+						line-height: 1.6;
+				}
+
+				.tutorial_text2 {
+    top: 1025px;
+    padding: 45px;
+    width: 571px;
+    line-height: 1.6;
 }
 
-.tutorial_text1,
-.tutorial_text2 {
-    border: black solid thin;
-    color: white;
-    background-color: rgb(46, 40, 40);
-    opacity: 0.6;
-    cursor: pointer;
-}
+				.tutorial_holder {
+						display: inline-block;
+				}
+				.tutorial_holder1 {
+						display: inline-block;
+				}
+				.tutorial_holder2 {
+						display: inline-block;
+				}
 
-.tutorial_text1:hover,
-.tutorial_text2:hover {
-    border: black solid thin;
-    color: #1a3fe2;
-    background-color: white;
-    opacity: 0.6;
-    cursor: pointer;
-}
+				#logo {
+						font-family: 'Bahnschrift', Courier, monospace;
+						cursor: pointer;
+						padding-left: 10px;
+						padding-top: 10px;
+						padding-bottom: 10px;
+						font-size: xx-large;
+				}
+				.photog_name{
+					padding-top: 50px;
+					color: white;
+				}
+				.photo_type{
 
-.tutorial_text1 {
-  top: 248px;
-  left: 0px;
-  padding: 86px;
-  width: 571px;
-  line-height: 1.1;
-}
+				}
+				.strip{
+					background: #fff;
+				}
+				@media only screen and (width: 580px) {
+						.home_image{
+								width: 45%;height: 500px;
+						}
+						.tutorial_text1 {
+								top: 25px;
+								left: 13px;
+								padding: 62px;
+						}
+						.tutorial_text2 {
+								top: 95px;
+								left: 16px;
+								padding: 90px;
+								padding-right: 45px;
+						}
+					}
 
-.tutorial_text2 {
-  top: 145px;
-  left: 755px;
-  padding: 86px;
-  width: 571px;
-  line-height: 1.1;
-}
-
-.tutorial_holder {
-    display: inline-block;
-}
-.tutorial_holder1 {
-    display: inline-block;
-}
-.tutorial_holder2 {
-    display: inline-block;
-}
-
-#logo {
-    font-family: 'Bahnschrift', Courier, monospace;
-    cursor: pointer;
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: xx-large;
-}
-.photog_name{
-  padding-top: 50px;
-  color: white;
-}
-.photo_type{
-
-}
-.strip{
-  background: #fff;
-}
-.gallery2 {
-  margin: 5px;
-  border: 1px solid #ccc;
-  width: 280px;
-  float:right;
-
-}
-
-.gallery2:hover {
-  border: 1px solid #777;
-}
-
-.gallery2 img {
-  width: 280px;
-  height: 230px;
-  border-radius: 90px;
-}
-@media only screen and (width: 580px) {
-    .home_image{
-        width: 45%;height: 500px;
-    }
-    .tutorial_text1 {
-        top: 25px;
-        left: 13px;
-        padding: 62px;
-    }
-    .tutorial_text2 {
-        top: 95px;
-        left: 16px;
-        padding: 90px;
-        padding-right: 45px;
-    }
-  }
 </style>
 		<!--[if lt IE 8]>
 		<div style=' clear: both; text-align:center; position: relative;'>
@@ -194,12 +176,7 @@ session_start();
               <div class="row">
                   <div class="grid_12">
                     <h1 id="logo">Blue Novelty</h1>
-                      <div class="search">
-                        <form class="example" action="./action_page.php">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
+
                       <div class="menu_block">
                           <nav class="horizontal-nav full-width horizontalNav-notprocessed">
                               <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
@@ -209,8 +186,7 @@ session_start();
                                   <li><a  (click)="nav('sign-up')">HOW TO REGISTER</a></li>-->
                                   <li><a href="./login_page.php">LOGIN</a></li>
                                   <li><a href="./signup_page.php">SIGN UP</a></li>
-                                  <li><a (click)="nav('sign-up')">PHOTOGRAPHERS</a></li>
-                                  <li><a (click)="nav('sign-up')">HOW TO REGISTER</a></li>
+
                               </ul>
                               <ul class="sf-menu" <?php if(!isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
                                 <li><a href="./logout.php">LOGOUT </a></li>
@@ -222,62 +198,79 @@ session_start();
               </div>
           </div>
       </div>
+
+			<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
   </header>
   <div class="main"><br>
     <hr>
-      <div class="tutorial_holder">
-          <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/home1.jpg" class="home_image">
-          <div class="tutorial_text tutorial_text1" responsive>Take your freelance career in content creation to the next level.
-          </div>
-          <!-- <div style="width: 300px;height: 300px; border: dotted thin white;border-radius: 20px; float: left;">img left</div> -->
-          <span>&nbsp;&nbsp;&nbsp;</span>
-          <!-- <div style="width: 300px;height: 300px; border: dotted thin white; border-radius: 20px; float: left;">img right</div> -->
-          <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/home2.jpg" class="home_image">
-          <div class="tutorial_text tutorial_text2" responsive>“Book a Photographer or freelance career in content creating Videographer Now.”.
-          </div>
-      </div><br><br>
+		<div class="tutorial_holder1">
+				<img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/phome2.jpg" class="home_image">
+				<div class="tutorial_text tutorial_text1" responsive>Take your <br>freelance career <br>in content<br> creation to<br> the next level.
+				</div>
+				<!-- <div style="width: 300px;height: 300px; border: dotted thin white;border-radius: 20px; float: left;">img left</div> -->
+				<span>&nbsp;&nbsp;&nbsp;</span>
+
+		</div><br><br>
+		<div class="tutorial_holder2">
+				<!-- <div style="width: 300px;height: 300px; border: dotted thin white; border-radius: 20px; float: left;">img right</div> -->
+				<img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/home1.jpg" class="home_image">
+				<div class="tutorial_text tutorial_text2" responsive>“Book a <br>Photographer<br> or freelance<br> career in<br> content<br> creating <br>Videographer <br>Now.”.
+				</div>
+		</div><br><br>
+
+<br>
       <!--=====================Content======================-->
 <!-- <center> -->
- <div class="gallery_main">
-   <div class="gallery2">
+<div class="gallery_main">
+	<div class="gallery2">
 
-  <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/photographer-selecting-photos-RZPRBXK.jpg">
-    <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/photographer-selecting-photos-RZPRBXK.jpg" alt="Cinque Terre">
-  </a>
-  <div class="desc">
-    <a (click)="nav('profile')">View Profile</a> |
-  <a (click)="nav('profile')">Book Now</a>
+ <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/ad1.jpg">
+	 <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/photographer-selecting-photos-RZPRBXK.jpg" alt="Cinque Terre">
+ </a>
+ <div class="desc">
+	 <a (click)="nav('profile')">View Profile</a> |
+ <a (click)="nav('profile')">Book Now</a>
 
-  </div>
+ </div>
 </div>
 
 <div class="gallery2">
-  <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/page4_img1.jpg">
-    <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/page4_img1.jpg" alt="Forest">
-  </a>
-  <div class="desc">  <a (click)="nav('profile')">View Profile</a> |
-  <a  (click)="nav('profile')">Book Now</a>
+ <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/ad2.jpg">
+	 <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/page4_img1.jpg" alt="Forest">
+ </a>
+ <div class="desc">  <a (click)="nav('profile')">View Profile</a> |
+ <a  (click)="nav('profile')">Book Now</a>
 </div>
 </div>
 
 <div class="gallery2">
-  <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/professional-female.jpg">
-    <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/professional-female.jpg" alt="Northern Lights">
-  </a>
-  <div class="desc">
-    <a (click)="nav('profile')">View Profile</a> |
-  <a (click)="nav('profile')">Book Now</a>
+ <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/ad3.jpg">
+	 <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/professional-female.jpg" alt="Northern Lights">
+ </a>
+ <div class="desc">
+	 <a (click)="nav('profile')">View Profile</a> |
+ <a (click)="nav('profile')">Book Now</a>
 </div>
 
 </div>
 
 <div class="gallery2">
-  <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/casourel3.jpg">
-    <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/casourel3.jpg" alt="Mountains">
-  </a>
-  <div class="desc">
-    <a (click)="nav('profile')">View Profile</a> |
-  <a (click)="nav('profile')">Book Now</a>
+ <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/ad4.jpg">
+	 <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/casourel3.jpg" alt="Mountains">
+ </a>
+ <div class="desc">
+	 <a (click)="nav('profile')">View Profile</a> |
+ <a (click)="nav('profile')">Book Now</a>
 </div>
 
 </div>
@@ -286,11 +279,12 @@ session_start();
   <br>
     <hr>
     <br>
+		<h1>DISCOVER STUNNING GALLERY FROM THE WORLDS BEST CREATORS</h1>
+
       <section class="content">
           <div class="container">
               <div class="row">
                   <div class="grid_12">
-                      <h3>DISCOVER STUNNING GALLERY FROM THE WORLDS BEST CREATORS</h3>
                       <div class="gallery">
                           <div class="row">
                               <div class="grid_4">
