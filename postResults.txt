@@ -1,3 +1,16 @@
 Array
 (
+    [ind] => 10
+    [name] => Elijah
+    [surname] => Ilunga
+    [company_name] => Elijah Ilunga
+    [email] => Chevalcheezy@gmail.com
+    [dob] => 12/06/1999
+    [gender] => Male
+    [content_type] => Photography
+    [which_photography] => Lifestyle
+    [which_photography1] => Lifestyle
+    [profile_img] => uploads/10/Elijah_main.jpeg
+    [user_type] => Photographer
+    [password] => test
 )

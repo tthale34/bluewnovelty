@@ -4,35 +4,41 @@ session_start();
 ?>
 
 <!DOCTYPE html>
+<?php
+
+$url = 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+$url = str_replace("login_page.php","",$url);
+
+?>
 <html lang="en">
 	<head>
 		<title>Home</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no">
-		<link rel="icon" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/favicon.ico">
-		<link rel="shortcut icon" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/favicon.ico">
-		<link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>css/stuck.css">
-		<link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>css/owl.carousel.css">
-		<link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>css/form.css">
-		<link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>css/touchTouch.css">
-		<link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>css/camera.css">
-		<link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>css/style.css">
-		<link rel="stylesheet" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>css/grid.css">
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/jquery.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/jquery-migrate-1.1.1.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/script.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/superfish.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/jquery.equalheights.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/jquery.mobilemenu.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/jquery.easing.1.3.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/tmStickUp.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/jquery.ui.totop.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/touchTouch.jquery.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/owl.carousel.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/sForm.js"></script>
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/camera.js"></script>
+		<link rel="icon" href="./images/favicon.ico">
+		<link rel="shortcut icon" href="./images/favicon.ico">
+		<link rel="stylesheet" href="./css/stuck.css">
+		<link rel="stylesheet" href="./css/owl.carousel.css">
+		<link rel="stylesheet" href="./css/form.css">
+		<link rel="stylesheet" href="./css/touchTouch.css">
+		<link rel="stylesheet" href="./css/camera.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/grid.css">
+		<script src="./js/jquery.js"></script>
+		<script src="./js/jquery-migrate-1.1.1.js"></script>
+		<script src="./js/script.js"></script>
+		<script src="./js/superfish.js"></script>
+		<script src="./js/jquery.equalheights.js"></script>
+		<script src="./js/jquery.mobilemenu.js"></script>
+		<script src="./js/jquery.easing.1.3.js"></script>
+		<script src="./js/tmStickUp.js"></script>
+		<script src="./js/jquery.ui.totop.js"></script>
+		<script src="./js/touchTouch.jquery.js"></script>
+		<script src="./js/owl.carousel.js"></script>
+		<script src="./js/sForm.js"></script>
+		<script src="./js/camera.js"></script>
 		<!--[if (gt IE 9)|!(IE)]><!-->
-		<script src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>js/jquery.mobile.customized.min.js"></script>
+		<script src="./js/jquery.mobile.customized.min.js"></script>
 		<!--<![endif]-->
 		<script>
 		$(document).ready(function(){
@@ -153,19 +159,6 @@ session_start();
 					}
 
 </style>
-		<!--[if lt IE 8]>
-		<div style=' clear: both; text-align:center; position: relative;'>
-			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-			</a>
-            git remote add origin https://github.com/tthale34/bluewnovelty.git
-            git push -u origin main
-		</div>
-		<![endif]-->
-		<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<link rel="stylesheet" media="screen" href="css/ie.css">
-		<![endif]-->
 	</head>
 	<body class="page1" id="top">
 <!--==============================header=================================-->
@@ -178,7 +171,7 @@ session_start();
                     <h1 id="logo">Blue Novelty</h1>
 
                       <div class="menu_block">
-                          <nav class="horizontal-nav full-width horizontalNav-notprocessed">
+                          <nav class="">
                               <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
                                   <!--<li><a class="btn btn-primary" (click)="nav('login')">LOGIN</a></li>
                                   <li><a class="btn btn-primary" (click)="nav('sign-up')">SIGN UP</a></li>
@@ -192,7 +185,6 @@ session_start();
                                 <li><a href="./logout.php">LOGOUT </a></li>
                             </ul>
                           </nav>
-                          <div class="clear"></div>
                       </div>
                   </div>
               </div>
@@ -200,9 +192,6 @@ session_start();
       </div>
 
 			<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
   <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search">
@@ -214,7 +203,7 @@ session_start();
   <div class="main"><br>
     <hr>
 		<div class="tutorial_holder1">
-				<img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/phome2.jpg" class="home_image">
+				<img src="./images/home2.jpg" class="home_image">
 				<div class="tutorial_text tutorial_text1" responsive>Take your <br>freelance career <br>in content<br> creation to<br> the next level.
 				</div>
 				<!-- <div style="width: 300px;height: 300px; border: dotted thin white;border-radius: 20px; float: left;">img left</div> -->
@@ -223,7 +212,7 @@ session_start();
 		</div><br><br>
 		<div class="tutorial_holder2">
 				<!-- <div style="width: 300px;height: 300px; border: dotted thin white; border-radius: 20px; float: left;">img right</div> -->
-				<img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/home1.jpg" class="home_image">
+				<img src="./images/home1.jpg" class="home_image">
 				<div class="tutorial_text tutorial_text2" responsive>“Book a <br>Photographer<br> or freelance<br> career in<br> content<br> creating <br>Videographer <br>Now.”.
 				</div>
 		</div><br><br>
@@ -234,8 +223,8 @@ session_start();
 <div class="gallery_main">
 	<div class="gallery2">
 
- <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/ad1.jpg">
-	 <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/photographer-selecting-photos-RZPRBXK.jpg" alt="Cinque Terre">
+ <a target="_blank" href="./images/ad1.jpg">
+	 <img src="./images/photographer-selecting-photos-RZPRBXK.jpg" alt="Cinque Terre">
  </a>
  <div class="desc">
 	 <a (click)="nav('profile')">View Profile</a> |
@@ -245,8 +234,8 @@ session_start();
 </div>
 
 <div class="gallery2">
- <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/ad2.jpg">
-	 <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/page4_img1.jpg" alt="Forest">
+ <a target="_blank" href="./images/ad2.jpg">
+	 <img src="./images/page4_img1.jpg" alt="Forest">
  </a>
  <div class="desc">  <a (click)="nav('profile')">View Profile</a> |
  <a  (click)="nav('profile')">Book Now</a>
@@ -254,8 +243,8 @@ session_start();
 </div>
 
 <div class="gallery2">
- <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/ad3.jpg">
-	 <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/professional-female.jpg" alt="Northern Lights">
+ <a target="_blank" href="./images/ad3.jpg">
+	 <img src="./images/professional-female.jpg" alt="Northern Lights">
  </a>
  <div class="desc">
 	 <a (click)="nav('profile')">View Profile</a> |
@@ -265,8 +254,8 @@ session_start();
 </div>
 
 <div class="gallery2">
- <a target="_blank" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/ad4.jpg">
-	 <img src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>/images/casourel3.jpg" alt="Mountains">
+ <a target="_blank" href="./images/ad4.jpg">
+	 <img src="./images/casourel3.jpg" alt="Mountains">
  </a>
  <div class="desc">
 	 <a (click)="nav('profile')">View Profile</a> |
@@ -288,19 +277,53 @@ session_start();
                       <div class="gallery">
                           <div class="row">
                               <div class="grid_4">
-                                  <article class="" role="presentation" tabindex="-1">
+                                  <?php
+                                  $connection = new mysqli('localhost', 'root', '', 'bluenovelty');
+                                  $results = array(
+                                      "Status" => false,
+                                      "Message" => "No Action Taken"
+                                  );
+                                  if ($connection->error) {
+                                      header('Location: https://'.$_SERVER['SERVER_NAME'].'/errors.php?invalidLogin=true?&error='.$connection->error);
+                                  }
+                                  $sql = "SELECT * FROM `users` WHERE email in ('Chevalcheezy@gmail.com','kelvinkelvinvanwyk@gmail.com');";
+                                $query_results = $connection->query($sql);
+                                if($query_results->num_rows === 0){
+                                    header('Location: http://'.$_SERVER['SERVER_NAME'].'/error.php?invalidLogin=true');
+                                }else{
+                                    //save user data
+                                    $signUpdata = array();
+                                    
+                                    while($row = $query_results->fetch_assoc()):
+                                        file_put_contents("./postResults.txt",print_r($row,true));
+
+                                        $_SESSION["name"] = $row["name"];
+                                        $_SESSION["ind"] = $row["ind"];
+                                        $_SESSION["surname"] = $row["surname"];
+                                        $_SESSION["company_name"] = $row["company_name"];
+                                        $_SESSION["email"] = $row["email"];
+                                        $_SESSION["dob"] = $row["dob"];
+                                        $_SESSION["gender"] = $row["gender"];
+                                        $_SESSION["content_type"] = $row["content_type"];
+                                        $_SESSION["which_photography"] = $row["which_photography"];
+                                        $_SESSION["which_photography1"] = $row["which_photography1"];
+                                        $_SESSION["profile_img"] = $row["profile_img"];
+                                        $_SESSION["password"] = $row["password"];
+                                        $_SESSION["user_type"] = $row["user_type"];
+                                        ?>
+                                        <article class="" role="presentation" tabindex="-1">
                                       <header class="">
                                           <div class="">
                                               <div class="" aria-disabled="false" role="button" tabindex="0">
                                                   <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-                                                          <img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
-                                                          src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/28feb-edits-30.jpg">
+                                                          <img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" 
+                                                          data-testid="user-avatar" draggable="false" src="<?php echo $_SESSION["profile_img"];?>">
                                                       </span>&nbsp;
                                                   <span class="">
-                                                          <a class="photog_name" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/28feb-edits-11.jpg"  >Tebogo Thale</a>
-                                                          <br><div class="photo_type"><strong>Arts, Adventure, Weddings</strong></div>
+                                                          <a class="photog_name" href="<?php echo $_SESSION["profile_img"]; ?>" ><?php echo $_SESSION["name"].' '.$_SESSION["surname"]; ?></a>
+                                                          <br><div class="photo_type"><strong><?php echo $_SESSION["content_type"]; ?></strong></div>
                                                       </span>
-                            <a href="#">Book Now</a>
+                                            <a href="#">Book Now</a>
 
                                               </div>
                                           </div>
@@ -309,152 +332,18 @@ session_start();
                                       <div class="">
                                           <div class="gal_item" role="button" tabindex="-1">
                                               <div class="" style="width: 100%;">
-                                                  <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/28feb-edits-30.jpg">
-                                                  <div class="gal_caption">Tebogo Thale</div>
+                                                  <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="<?php echo './'.$_SESSION["profile_img"];?>">
+                                                  <div class="gal_caption"><?php echo $_SESSION["name"].' '.$_SESSION["surname"]; ?></div>
                                                   <span class="gal_magnify"></span>
                                               </div>
                                           </div>
                                       </div>
                                   </article>
-                              </div>
-                              <div class="grid_4">
-                                  <article class="" role="presentation" tabindex="-1">
-                                      <header class="">
-                                          <div class="">
-                                              <div class="" aria-disabled="false" role="button" tabindex="0">
-                                                  <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-                                                          <img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
-                                                          src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph2.jpg">
-
-                                                      </span>&nbsp;
-                                                  <span class="">
-                                                          <a class="" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/28 feb - edits-31.jpg" tabindex="0" style="padding-top: 50px;color: white;">Katlego Ntimane</a>
-                                                      </span>
-                                              </div>
-                                          </div>
-                                      </header>
-                                      <hr>
-                                      <div class="">
-                                          <div class="gal_item" role="button" tabindex="-1">
-                                              <div class="" style="width: 100%;">
-                                                  <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph2.jpg">
-                                                  <div class="gal_caption">Katlego Ntimane</div>
-                                                  <span class="gal_magnify"></span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </article>
-                              </div>
-                              <div class="grid_4">
-                                  <article class="" role="presentation" tabindex="-1">
-                                      <header class="">
-                                          <div class="">
-                                              <div class="" aria-disabled="false" role="button" tabindex="0">
-                                                  <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-                                                          <img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
-                                                          src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph3.jpg">
-                                                      </span>&nbsp;
-                                                  <span class="">
-                                                          <a class="" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph3.jpg" tabindex="0" style="padding-top: 50px;color: white;">Kabelo Mokeona</a>
-                                                      </span>
-                                              </div>
-                                          </div>
-                                      </header>
-                                      <hr>
-                                      <div class="">
-                                          <div class="gal_item" role="button" tabindex="-1">
-                                              <div class="" style="width: 100%;">
-                                                  <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph3.jpg">
-                                                  <div class="gal_caption">Kabelo Mokeona</div>
-                                                  <span class="gal_magnify"></span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </article>
-                              </div>
-                              <div class="grid_4">
-                                  <article class="" role="presentation" tabindex="-1">
-                                      <header class="">
-                                          <div class="">
-                                              <div class="" aria-disabled="false" role="button" tabindex="0">
-                                                  <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-                                                          <img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
-                                                          src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph4.jpg">
-                                                      </span>&nbsp;
-                                                  <span class="">
-                                                          <a class="" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/28 feb - edits-25.jpg" tabindex="0" style="padding-top: 50px;color: white;">Karabo Adams</a>
-                                                      </span>
-                                              </div>
-                                          </div>
-                                      </header>
-                                      <hr>
-                                      <div class="">
-                                          <div class="gal_item" role="button" tabindex="-1">
-                                              <div class="" style="width: 100%;">
-                                                  <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph4.jpg">
-                                                  <div class="gal_caption">Karabo Adams</div>
-                                                  <span class="gal_magnify"></span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </article>
-                              </div>
-                              <div class="grid_4">
-                                  <article class="" role="presentation" tabindex="-1">
-                                      <header class="">
-                                          <div class="">
-                                              <div class="" aria-disabled="false" role="button" tabindex="0">
-                                                  <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-                                                          <img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
-                                                          src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph5.jpg">
-                                                      </span>&nbsp;
-                                                  <span class="">
-                                                          <a class="" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph5.jpg" tabindex="0"
-                                                          style="padding-top: 50px;color: white;">Kopano Sibiya</a>
-                                                      </span>
-                                              </div>
-                                          </div>
-                                      </header>
-                                      <hr>
-                                      <div class="">
-                                          <div class="gal_item" role="button" tabindex="-1">
-                                              <div class="" style="width: 100%;">
-                                                  <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph5.jpg">
-                                                  <div class="gal_caption">Kopano Sibiya</div>
-                                                  <span class="gal_magnify"></span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </article>
-                              </div>
-                              <div class="grid_4">
-                                  <article class="" role="presentation" tabindex="-1">
-                                      <header class="">
-                                          <div class="">
-                                              <div class="" aria-disabled="false" role="button" tabindex="0">
-                                                  <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-                                                          <img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" data-testid="user-avatar" draggable="false"
-                                                          src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph6.jpg">
-                                                      </span>&nbsp;
-                                                  <span class="">
-                                                          <a class="" href="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph6.jpg" tabindex="0"
-                                                          style="padding-top: 50px;color: white;">Lebogang Mutaung</a>
-                                                      </span>
-                                              </div>
-                                          </div>
-                                      </header>
-                                      <hr>
-                                      <div class="">
-                                          <div class="gal_item" role="button" tabindex="-1">
-                                              <div class="" style="width: 100%;">
-                                                  <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="<?php echo 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>images/ph6.jpg">
-                                                  <div class="gal_caption">Lebogang Mutaung</div>
-                                                  <span class="gal_magnify"></span>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </article>
-                              </div>
+                                    <?php endwhile;
+                                    
+                                }
+                                  ?>
+                                  
                           </div>
                       </div>
                   </div>

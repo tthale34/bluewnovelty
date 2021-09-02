@@ -69,7 +69,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
         // $results["Data"] = $signUpdata;
         // $results["jwt"] = $myJwt;
         $_SESSION['username'] = $_POST["username"];
-        header('Location: http://'.$_SERVER['SERVER_NAME'].'/api');
+        header('Location: http://'.$_SERVER['SERVER_NAME'].'/api/profile_page.php');
 
         // print_r(json_encode($results));
     }

@@ -1,11 +1,12 @@
 <?php 
+session_start();
 $url = 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 $url = str_replace("signup_page.php","",$url);
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Home</title>
+		<title>Profile Page</title>
 		<meta charset="utf-8">
 		<meta name="format-detection" content="telephone=no">
 		<link rel="icon" href="./images/favicon.ico">
@@ -172,6 +173,11 @@ $url = str_replace("signup_page.php","",$url);
         padding-right: 45px;
     }
   }
+  .profile_image{
+    border-radius:20px;
+    width: 90%;
+    height: 10%;
+}
 </style>
 		<!--[if lt IE 8]>
 		<div style=' clear: both; text-align:center; position: relative;'>
@@ -189,6 +195,7 @@ $url = str_replace("signup_page.php","",$url);
 	</head>
 	<body class="page1" id="top">
 <!--==============================header=================================-->
+<div style="display:block;">
 <header>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <div id="stuck_container">
@@ -202,129 +209,34 @@ $url = str_replace("signup_page.php","",$url);
                         <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                         </div>
-  
-                      <div class="menu_block">
-                          <nav class="horizontal-nav full-width horizontalNav-notprocessed">
-                            <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
+                        
+                        <div class="menu_block">
+                          <nav class="">
+                              <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
                                   <li><a href="./login_page.php">LOGIN</a></li>
                                   <li><a href="./signup_page.php">SIGN UP</a></li>
                               </ul>
                               <ul class="sf-menu" <?php if(!isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
-                                <li><a (click)="logout()">LOGOUT </a></li>
+                                <li><a href="./logout.php">LOGOUT </a></li>
+                            </ul>
                           </nav>
-                          <div class="clear"></div>
                       </div>
                   </div>
               </div>
           </div>
       </div>
   </header>
-  <div class="main"><br>
-    <div class="signup_info">
-        <div <?php if(isset($_GET['invalidLogin'])){echo 'style="display:inline;"';}else { echo 'style="display:none;"';}?>><label class="invalidUser">Invalid User credentails entered.</label></div>
-        <div>
-            <form method="post" action="./sign_up.php">
-            <ul style="padding:10px;">
-                <li class="item"><label class="signin_label" style="padding-right: 250px;">Name&nbsp;:&nbsp;</label>
-                <input class="form-control" type="text" name="name"></li>
-                <li class="item"><label class="signin_label" style="padding-right: 211px;">Surname&nbsp;:&nbsp;</label>
-                <input class="form-control" type="text" name="surname"></li>
-                <li class="item"><label class="signin_label" style="padding-right: 137px;">Company Name&nbsp;:&nbsp;</label>
-                <input class="form-control" type="text" name="company_name"></li>
-                <li class="item">
-                    <label class="signin_label" style="padding-right: 250px;">Email&nbsp;:&nbsp;</label>
-                    <input class="form-control" type="text" name="email"></li>
-                <li class="item">
-                    <label class="signin_label" style="padding-right: 200px;">Password&nbsp;:&nbsp;</label>
-                    <input class="form-control" type="password" name="password" id="password"></li>
-                <li class="item">
-                    <label class="signin_label" style="padding-right: 95px;">Re-enter Password&nbsp;:&nbsp;</label>
-                    <input class="form-control" type="password" name="re_password" id="re_password" change="checkPasswordMatch()"/></li>
-                <li class="item" style="display:none;" id="pass_not_match">
-                    <label class="" style="padding-right: 250px;color: red;">Passwords do not match</label>
-                    </li>
-                <li class="item"><label class="signin_label" style="padding-right: 255px;">D.O.B&nbsp;:&nbsp;</label>
-                <input class="form-control" type="text" name="dob"></li>
-                <li class="item"><label class="signin_label" style="padding-right: 228px;">Gender&nbsp;:&nbsp;</label>
-                <select name="gender">
-                    <option></option>
-                    <option>Male</option>
-                    <option>Female</option>
-                </select></li>
-                <li class="item"><label class="signin_label" style="padding-right: 165px;">Content Type&nbsp;:&nbsp;</label>
-                    <select name="content_type">
-                    <option></option>
-                    <option>Photography</option>
-                    <option>Videography</option>
-                </select></li>
-                <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
-                    <select name="which_photography">
-                        <option></option>
-                        <option>Advertisement</option>
-                        <option>Aerial</option>
-                        <option>Architectural/Real Estate</option>
-                        <option>Black and White</option>
-                        <option>Event</option>
-                        <option>Fashion</option>
-                        <option>Food</option>
-                        <option>Landscape</option>
-                        <option>Lifestyle</option>
-                        <option>Maternity</option>
-                        <option>Pet</option>
-                        <option>Photojournalism</option>
-                        <option>Portrait</option>
-                        <option>Product</option>
-                        <option>Sports</option>
-                        <option>Studio</option>
-                        <option>Travel</option>
-                        <option>Wildlife</option>
-                        <option>Wedding</option>
-                    </select></li>
-                        <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
-                        <select name="which_photography1">
-                                <option>Aerial (Drone)</option>
-                                <option>Time-Lapse</option>
-                                <option>Vlog</option>
-                                <option>Architectural Photographer</option>
-                                <option>Advertisement</option>
-                                <option>Aerial</option>
-                                <option>Architectural/Real Estate</option>
-                                <option>Black and White</option>
-                                <option>Event</option>
-                                <option>Fashion</option>
-                                <option>Food</option>
-                                <option>Landscape</option>
-                                <option>Lifestyle</option>
-                                <option>Maternity</option>
-                                <option>Pet</option>
-                                <option>Photojournalism</option>
-                                <option>Portrait</option>
-                                <option>Product</option>
-                                <option>Sports</option>
-                                <option>Studio</option>
-                                <option>Travel</option>
-                                <option>Wildlife</option>
-                                <option>Wedding</option>
-                            </select></li>
-                            <li class="item">
-                                <label class="signin_label" style="padding-right: 200px;">User&nbsp;Type&nbsp;:&nbsp;</label>
-                                <select name="user_type">
-                                    <option></option>
-                                    <option>Photographer</option>
-                                    <option>User</option>
-                                </select>
-                            </li>
-                            <li class="item">
-                                <label class="signin_label" style="padding-right: 160px;">Profile&nbsp;Image&nbsp;:&nbsp;</label>
-                                <input class="form-control" type="file" name="profile_img">
-                            </li>
-            </ul>
-            <input type="submit" class="btn bt__2 sign_btn" value="Submit">
-            <input type="clear" class="btn bt__2 sign_btn" value="Clear">
-            </form>
-        </div>        
-    </div>
 </div>
+    <div style="border: solid thin white;margin-right:100px;">
+        <div <?php if(isset($_GET['invalidLogin'])){echo 'style="display:inline;"';}else { echo 'style="display:none;"';}?>><label class="invalidUser">Invalid User credentails entered.</label></div>
+            <img src="<?php echo "./".$_SESSION["profile_img"]?>" class="profile_image">
+            <br><br>
+            <label>Upload To Gallery</label>
+            <br><br>
+                <label class="signin_label" style="padding-right: 160px;">Image&nbsp;:&nbsp;</label>
+                <input class="form-control" type="file" name="profile_img">
+                <br>
+    </div>
       <!--==============================Bot_block=================================-->
       <section class="bottom_block">
           <div class="container">

@@ -1007,6 +1007,12 @@ justify-content: center;
     margin: 0;
     padding: 14px;
   }
+  .profile_image{
+    border: solid thin white;
+    border-radius:20px;
+    width: 90%;
+    height: 20%;
+}
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
