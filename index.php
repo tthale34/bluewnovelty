@@ -202,21 +202,7 @@ $url = str_replace("login_page.php","",$url);
   </header>
   <div class="main"><br>
     <hr>
-		<div class="tutorial_holder1">
-				<img src="./images/home2.jpg" class="home_image">
-				<div class="tutorial_text tutorial_text1" responsive>Take your <br>freelance career <br>in content<br> creation to<br> the next level.
-				</div>
-				<!-- <div style="width: 300px;height: 300px; border: dotted thin white;border-radius: 20px; float: left;">img left</div> -->
-				<span>&nbsp;&nbsp;&nbsp;</span>
-
-		</div><br><br>
-		<div class="tutorial_holder2">
-				<!-- <div style="width: 300px;height: 300px; border: dotted thin white; border-radius: 20px; float: left;">img right</div> -->
-				<img src="./images/home1.jpg" class="home_image">
-				<div class="tutorial_text tutorial_text2" responsive>“Book a <br>Photographer<br> or freelance<br> career in<br> content<br> creating <br>Videographer <br>Now.”.
-				</div>
-		</div><br><br>
-
+		
 <br>
       <!--=====================Content======================-->
 <!-- <center> -->
@@ -320,7 +306,7 @@ $url = str_replace("login_page.php","",$url);
                                                           data-testid="user-avatar" draggable="false" src="<?php echo $_SESSION["profile_img"];?>">
                                                       </span>&nbsp;
                                                   <span class="">
-                                                          <a class="photog_name" href="<?php echo $_SESSION["profile_img"]; ?>" ><?php echo $_SESSION["name"].' '.$_SESSION["surname"]; ?></a>
+                                                          <a class="photog_name" href="./profile_page.php" ><?php echo $_SESSION["name"].' '.$_SESSION["surname"]; ?></a>
                                                           <br><div class="photo_type"><strong><?php echo $_SESSION["content_type"]; ?></strong></div>
                                                       </span>
                                             <a href="#">Book Now</a>
@@ -332,7 +318,7 @@ $url = str_replace("login_page.php","",$url);
                                       <div class="">
                                           <div class="gal_item" role="button" tabindex="-1">
                                               <div class="" style="width: 100%;">
-                                                  <img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="<?php echo './'.$_SESSION["profile_img"];?>">
+                                                  <a href="./profile_page.php"><img alt="Photographers Photo" class="" style="object-fit: cover;width: 100%;" src="<?php echo './'.$_SESSION["profile_img"];?>"></a>
                                                   <div class="gal_caption"><?php echo $_SESSION["name"].' '.$_SESSION["surname"]; ?></div>
                                                   <span class="gal_magnify"></span>
                                               </div>
