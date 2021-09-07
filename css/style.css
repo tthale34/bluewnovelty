@@ -219,7 +219,7 @@ a {
 }
 
 a:hover {
-    color: #fe7676;
+    color: #1a3fe2;
 }
 
 .btn {
@@ -920,8 +920,9 @@ form.example::after {
 }
 .gallery_main {
   margin: 0 auto;
-  display: flex;
+display: flex;
 justify-content: center;
+background-color: #fff;
 
 }
 .gallery2 {
@@ -931,12 +932,13 @@ justify-content: center;
 }
 
 .gallery2:hover {
-  border: 1px solid #777;
+  /* border: 1px solid #777; */
+  color: #1a3fe2;
 }
 
 .gallery2 img {
   width: 280px;
-  height: 725px;
+  height: 295px;
   border-radius: 25px;
 }
 
@@ -1012,7 +1014,8 @@ justify-content: center;
     border-radius:20px;
     width: 90%;
     height: 20%;
-}
+    }
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
+}

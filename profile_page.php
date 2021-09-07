@@ -188,9 +188,9 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://assets.whicdn.com/assets/apple-touch-icon-8931e5fb1a152ab346a7e686cee68947f500005a2bcf688243f36f9185e7ac07.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://assets.whicdn.com/assets/favicon-32x32-b87167c22631401b1264a3255366236bb20fe668cc358a649a3aa4f8b6457b78.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://assets.whicdn.com/assets/favicon-16x16-d2cb79e1987cc80f53bcaac37c6e11025f49f39b48440070e1b392d6cd6873de.png">
-<link rel="mask-icon" href="https://assets.whicdn.com/assets/safari-pinned-tab-22b569b09abd0360e129c661c62c48993b9ff0e1a5defcdf07a9a21f79cc3d3a.svg" color="#ff4477">
-<meta name="msapplication-TileColor" content="#ff4477">
-<meta name="theme-color" content="#ff4477">
+<link rel="mask-icon" href="https://assets.whicdn.com/assets/safari-pinned-tab-22b569b09abd0360e129c661c62c48993b9ff0e1a5defcdf07a9a21f79cc3d3a.svg" color="#1a3fe2">
+<meta name="msapplication-TileColor" content="#1a3fe2">
+<meta name="theme-color" content="#1a3fe2">
 
 
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/iblenkmcolcdonmlfknbpbgjebabcoae" />
@@ -205,7 +205,15 @@
 <meta name="csrf-token" content="DbBINVAyZm4D9WXdmYmh6yKUHTGoxXKVyrIBohv8q2DkYUfE/CP0Hgms0SpouNjaaxnjZ4U85/puZWBTJ2tm2Q==" />
 
 <link rel="stylesheet" media="screen" href="https://assets.whicdn.com/assets/application-814c269acd86567baca302a20eb967b5e7a258c72e49e1586d1bc190671c7136.css" />
-
+<link rel="icon" href="./images/favicon.ico">
+		<link rel="shortcut icon" href="./images/favicon.ico">
+		<link rel="stylesheet" href="./css/stuck.css">
+		<link rel="stylesheet" href="./css/owl.carousel.css">
+		<link rel="stylesheet" href="./css/form.css">
+		<link rel="stylesheet" href="./css/touchTouch.css">
+		<link rel="stylesheet" href="./css/camera.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/grid.css">
 <script type="text/javascript">
 
 (function () {
@@ -411,29 +419,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <div id="stuck_container">
           <div class="container">
-              <div class="row">
-                  <div class="grid_12">
-                    <h1 id="logo" (click)="nav('')">Blue Novelty</h1>
-                      <div class="search">
-                      <form class="example" action="/action_page.php">
+            <div class="row">
+              <div class="grid_12">
+                <h1 id="logo">Blue Novelty</h1>
+                    <div class="" style="margin-left:40%;margin-top:10px;">
+                        <form action="/action_page.php">
                         <input type="text" placeholder="Search.." name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
-                        </div>
-  
-                      <div class="menu_block">
-                          <nav class="horizontal-nav full-width horizontalNav-notprocessed">
-                            <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
-                                  <li><a href="./login_page.php">LOGIN</a></li>
-                                  <li><a href="./signup_page.php">SIGN UP</a></li>
-                              </ul>
-                              <ul class="sf-menu" <?php if(!isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
-                                <li><a (click)="logout()">LOGOUT </a></li>
-                          </nav>
-                          <div class="clear"></div>
-                      </div>
+                    </div>
+                  <div class="">                        
+                      <nav class="" style="float:right;">
+                          <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
+                              <!--<li><a class="btn btn-primary" (click)="nav('login')">LOGIN</a></li>
+                              <li><a class="btn btn-primary" (click)="nav('sign-up')">SIGN UP</a></li>
+                              <li><a (click)="nav('sign-up')">PHOTOGRAPHERS</a></li>
+                              <li><a  (click)="nav('sign-up')">HOW TO REGISTER</a></li>-->
+                              <li><a href="./login_page.php">LOGIN</a></li>
+                              <li><a href="./signup_page.php">SIGN UP</a></li>
+
+                          </ul>
+                          <ul class="sf-menu" <?php if(!isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
+                            <li><a href="./logout.php">LOGOUT </a></li>
+                        </ul>
+                      </nav>
                   </div>
               </div>
+            </div>
           </div>
       </div>
   </header>
@@ -514,11 +526,11 @@
 
     <div class="header-content-right"><br class="show-xs">
       <div class="right no-float-xs text-center no-wrap">
-        <a class="btn" title="Trophies" href="/MyYouthIsYours/achievements">
+        <!-- <a class="btn" title="Trophies" href="/MyYouthIsYours/achievements">
           &nbsp;<i class="icon icon-trophy"></i>&nbsp;
-</a>   
-    <!-- <a href="#" class="js-follow-button anonymous btn bg-gradient " data-user-id="21555276" data-username="MyYouthIsYours" 
-    data-collection-count="30" rel="nofollow">Follow</a> -->
+        </a>    -->
+    <a href="#" class="js-follow-button anonymous btn " data-user-id="21555276" data-username="MyYouthIsYours" 
+    data-collection-count="30" rel="nofollow">Follow</a>
         </div>
     </div>
   </div>
