@@ -1,4 +1,4 @@
-
+<?php session_start();?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en">
 
@@ -184,11 +184,6 @@
     <link rel="alternate" href="android-app://com.weheartit.android/http/weheartit.com/user/MyYouthIsYours" />
 
   <link rel="manifest" href="/manifest.webmanifest">
-<link rel="shortcut icon" type="image/x-icon" href="https://assets.whicdn.com/assets/favicon-acfe5c2d81119e375156c82cd638c2baa64f367772c1c93ca3d6e436306e53b1.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="https://assets.whicdn.com/assets/apple-touch-icon-8931e5fb1a152ab346a7e686cee68947f500005a2bcf688243f36f9185e7ac07.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://assets.whicdn.com/assets/favicon-32x32-b87167c22631401b1264a3255366236bb20fe668cc358a649a3aa4f8b6457b78.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://assets.whicdn.com/assets/favicon-16x16-d2cb79e1987cc80f53bcaac37c6e11025f49f39b48440070e1b392d6cd6873de.png">
-<link rel="mask-icon" href="https://assets.whicdn.com/assets/safari-pinned-tab-22b569b09abd0360e129c661c62c48993b9ff0e1a5defcdf07a9a21f79cc3d3a.svg" color="#1a3fe2">
 <meta name="msapplication-TileColor" content="#1a3fe2">
 <meta name="theme-color" content="#1a3fe2">
 
@@ -204,7 +199,7 @@
 <meta name="csrf-param" content="authenticity_token" />
 <meta name="csrf-token" content="DbBINVAyZm4D9WXdmYmh6yKUHTGoxXKVyrIBohv8q2DkYUfE/CP0Hgms0SpouNjaaxnjZ4U85/puZWBTJ2tm2Q==" />
 
-<link rel="stylesheet" media="screen" href="https://assets.whicdn.com/assets/application-814c269acd86567baca302a20eb967b5e7a258c72e49e1586d1bc190671c7136.css" />
+<link rel="stylesheet" media="screen" href="https://assets.whicdn.com/assets/application.css" />
 <link rel="icon" href="./images/favicon.ico">
 		<link rel="shortcut icon" href="./images/favicon.ico">
 		<link rel="stylesheet" href="./css/stuck.css">
@@ -450,47 +445,6 @@
       </div>
   </header>
 
-<!-- Add images modal -->
-<div class="floating-window" id="addimages" style="display:none" aria-hidden="true" aria-role="dialog">
-  <span class="close"></span>
-  <div class="floating-window-content">
-    <span class="closex position-top-right"></span>
-    <p class="text-strong">New Post</p>
-    <hr class="no-padding">
-    <br>
-    <div class="grid text-center">
-      <div class="col span-4">
-        <a class="js-upload-image" title="Post Image" href="javascript:void(0);">
-          <i class="icon icon-upload icon-huge icon-primary push-down"></i><br>
-          Post Image
-</a>      </div>
-      <div class="col span-4">
-        <a title="Write an Article" href="/articles/new">
-          <i class="icon icon-article icon-huge icon-primary push-down">
-            <span class="btn btn-tiny bg-success position-top-right text-uppercase">new</span>
-          </i><br>
-          Write an Article
-</a>      </div>
-      <div class="col span-4">
-        <a class="js-add-from-url" title="Add From URL" href="javascript:void(0);">
-          <i class="icon icon-web icon-huge icon-primary push-down"></i><br>
-          Add From URL
-</a>      </div>
-    </div>
-
-    <hr>
-
-    <div class="grid">
-      <div class="col span-6 text-center"><small><a class="heartbutton-link text-primary" data-track="event" data-category="AddImage" data-action="ClickedGetHeartButton" data-label="false" href="/heart-button">Get the Heart Button</a></small></div>
-      <div class="col span-6 text-center"><small><a class="goodies-link text-primary" data-track="event" data-category="AddImage" data-action="ClickedAddButtonSite" data-label="false" href="/settings/goodies">Add button to my site</a></small></div>
-    </div>
-
-  </div>
-</div>
-
-<!-- no cookie warning (debug) -->
-
-
     <!-- interstitial for apps -->
 
       <div class="mobile-banner show-xs static-ad sticky-ad">
@@ -498,25 +452,20 @@
       </div>
 
     <main id="main" style="">
-      <div class="container" id="main-container" data-title="h a n n a h (@MyYouthIsYours) on We Heart It" data-page="">
-        
-<div id="sticky-top"></div>
-
-
-
-<div id="content" data-scroll-id="heart-id" data-user-id="21555276" data-url="/cover-image" data-ad-placeholder-url="collapse" data-infinite-scroll-url="https://weheartit.com/MyYouthIsYours" data-infinite-scroll-page="1" data-infinite-scroll-count="562">
-
+      <div class="container" id="main-container" data-title="h a n n a h (@MyYouthIsYours) on We Heart It" data-page="">        
+        <div id="sticky-top"></div>
+        <div id="content" data-scroll-id="heart-id" data-user-id="21555276" data-url="/cover-image" data-ad-placeholder-url="collapse" data-infinite-scroll-url="https://weheartit.com/MyYouthIsYours" data-infinite-scroll-page="1" data-infinite-scroll-count="562">
   
 <div class="header user-header">
 
   <div class="header-cover" style="background-image: url(./images/ad1.jpg);">
     <div class="header-cover-credit"></div>
   </div>
-
+<!-- start header -->
   <div class="header-content header-content-xs-static">
     <div class="header-content-left"><a class="avatar-container avatar-large" href="/MyYouthIsYours">
     <img alt="h a n n a h" title="h a n n a h" class="avatar" src="./images/ad1.jpg" />
-    <span class="avatar-badge badge-heartist"></span></a></div>
+    </a></div>
 
     <br class="show-xs">
     <h1 class="h1 no-margin text-overflow">
@@ -530,56 +479,232 @@
           &nbsp;<i class="icon icon-trophy"></i>&nbsp;
         </a>    -->
     <a href="#" class="js-follow-button anonymous btn " data-user-id="21555276" data-username="MyYouthIsYours" 
-    data-collection-count="30" rel="nofollow">Follow</a>
+    data-collection-count="30" rel="nofollow" <?php if(!isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>Change Banner</a>
         </div>
     </div>
+
   </div>
 </div>
-
+<!-- end header -->
+<!-- start tabs -->
 <ul class="tabs-light tabs-big tabs-xs-scroll header-offset-avatar bg-white">
-  <li class="active">
-    <a href="/MyYouthIsYours">Upload Images</a>
+  <li class="<?php if(isset($_GET['active_page']) && $_GET['active_page'] == "upload_img"){ echo 'active';}?>" 
+  <?php if(!isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
+    <a href="./profile_page.php?active_page=upload_img">Upload Images</a>
   </li>
-  <li class="">
-    <a href="/MyYouthIsYours/collections">Upload Videos</a>
+  <li class="<?php if(isset($_GET['active_page']) && $_GET['active_page'] == "upload_vid"){ echo 'active';}?>" 
+  <?php if(!isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
+    <a href="./profile_page.php?active_page=upload_vid">Upload Videos</a>
   </li>
-  <li class="">
-    <a href="/MyYouthIsYours/uploads">Gallery</a>
+  <li class="<?php if(isset($_GET['active_page']) && $_GET['active_page'] == "gallery"){ echo 'active';}?>">
+    <a href="./profile_page.php?active_page=gallery">Gallery</a>
   </li>
-  <li class="">
-    <a href="/MyYouthIsYours/contacts">Profile</a>
+  <li class="<?php if(!isset($_GET['active_page'])){ echo 'active';}?>">
+    <a href="./profile_page.php">Profile</a>
   </li>
-
 </ul>  
-  <div class="panel push-down panel-notice" id="notice" style="display:none">
-  <p></p>
 </div>
-</div>
+<!-- end tabs -->
 <br><br><br><br><br>
 
+<?php
+  if (isset($_SESSION["username"])):    
+?>
       <div class="col span-content">
+        <!-- Add Content Here -->
+        <div class="item">
+          <form action="./profile_page.php" method="post">
+            <h3 class="signin_label" style="padding-right: 160px;">Add&nbsp;Image&nbsp;:&nbsp;</h3>            
+            <input class="form-control" type="file" name="img">
+            <input class="btn bt__2" type="submit" name="submit" value="Submit">
+            <input class="btn bt__2" type="hidden" name="action" value="add_image">
+          </form>
+        </div>
+        <!-- End of Add Content Here -->
         <div class="grid-thumb user-profile grid-responsive">
           <div id="scroll-placeholder"></div>
-          
-          
         </div> <!-- close grid-thumb -->
-
-          <div id="page-spinner">
-    <div class="grid-flex grid-flex-justified">
-
-      
-
-        <span class="col">&nbsp;&nbsp;</span>
-
-      <a rel="next" class="col btn btn-block text-gray" href="https://weheartit.com/MyYouthIsYours?page=2">next &raquo;</a>
-    </div>
-  </div>
-
+        <div id="page-spinner">
+          <div class="grid-flex grid-flex-justified">
+            <span class="col">&nbsp;&nbsp;</span>
+          </div>
+        </div>
       </div>
-    </div>
+      <?php endif;?>
+<?php
 
+if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
+    // $mainClass = new main();
+    $connection = new mysqli('localhost', 'root', '', 'bluenovelty');
+    if ($connection->error) {
+        Echo "Could not connect to db";
+    }
+    if (isset($_POST["action"]) && $_POST["action"] == "add_image") {
+      //insert new image
+      $sql = "INSERT INTO `profile_images`";
+      $sql .= "(`username`, `image_name`)";
+      $sql .= "VALUES ('".$_SESSION["username"]."', '".$_POST["img"]."');commit;";
+      $connection->query($sql);
+      //get uer id
+      $sql = "SELECT `ind` FROM users WHERE `email`=".$_SESSION["username"].";";
+      $query_results = $connection->query($sql);
+      $userId;
+      while($row = $query_results->fetch_assoc()){
+          $userId = $row["ind"];
+      }
+      //save file
+      $target_dir = "./uploads/".$userId."/";
+      $file = $_FILES['profile_img']['name'];
+      $temp_name = $_FILES['profile_img']['tmp_name'];
+      $path_filename_ext = $target_dir . $file;
+      //Check if file already exists
+      if (file_exists($path_filename_ext)) {
+          echo "File exists:";
+          exit;        
+      } else {
+          if(move_uploaded_file($temp_name, $path_filename_ext)){
+            echo "File uploaded succesfully.";
+          }else {
+              echo "Couldn't move file:";
+              exit;
+          }
+      }
+      //update profile image url
+      $sql = "UPDATE `profile_images` SET `image_location` WHERE `username`=".$_SESSION["username"]." AND `image_name`=".$_POST["img"].";commit;";
+      $connection->query($sql);
+      header('Location: http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);
+    }
+}else{
+  if (isset($_GET["active_page"]) && $_GET["active_page"] == "gallery"):
+    // // $mainClass = new main();
+    // $connection = new mysqli('localhost', 'root', '', 'bluenovelty');
+    // if ($connection->error) {
+    //     Echo "Could not connect to db";
+    // }
+    // //get uer id
+    // $sql = "SELECT * FROM profile_images WHERE `email`=".$_SESSION["username"].";";
+    // $query_results = $connection->query($sql);
+    // $userId;
+    // while($row = $query_results->fetch_assoc()):
+    ?>
+      <div class="gallery_holder">
+        <ul class="gallery_profile">
+          <li >
+            <img class="gallerty_item" src="./images/page4_img3.jpg" Altr="Image 1">
+          </li>
+          <li>
+            <img class="gallerty_item" src="./images/page4_img2.jpg" Altr="Image 2">
+          </li>
+          <li>
+            <img class="gallerty_item" src="./images/page2_img8.jpg" Altr="Image 3">
+          </li>
+          <li>
+            <img class="gallerty_item" src="./images/page2_img2.jpg" Altr="Image 4">
+          </li>
+          <ul>
+      </div>  
+    <?php
+    // endwhile;
+    endif;
+}
+?>
+<div>
+            <!-- <form method="post" action="./sign_up.php"> -->
+            <ul style="padding:10px;">
+                <li class="item"><label class="signin_label" style="padding-right: 250px;">Name&nbsp;:&nbsp;</label>
+                <!-- <input class="form-control" type="text" name="name"></li> -->
+                <li class="item"><label class="signin_label" style="padding-right: 211px;">Surname&nbsp;:&nbsp;</label>
+                <!-- <input class="form-control" type="text" name="surname"></li> -->
+                <li class="item"><label class="signin_label" style="padding-right: 137px;">Company Name&nbsp;:&nbsp;</label>
+                <!-- <input class="form-control" type="text" name="company_name"></li> -->
+                <li class="item">
+                    <label class="signin_label" style="padding-right: 250px;">Email&nbsp;:&nbsp;</label>
+                    <!-- <input class="form-control" type="text" name="email"></li> -->
+                <li class="item">
+                    <label class="signin_label" style="padding-right: 200px;">Password&nbsp;:&nbsp;</label>
+                    <!-- <input class="form-control" type="password" name="password" id="password"></li> -->                
+                <li class="item"><label class="signin_label" style="padding-right: 255px;">D.O.B&nbsp;:&nbsp;</label>
+                <!-- <input class="form-control" type="text" name="dob"></li> -->
+                <li class="item"><label class="signin_label" style="padding-right: 228px;">Gender&nbsp;:&nbsp;</label>
+                <!-- <select name="gender">
+                    <option></option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select> -->
+              </li>
+                <li class="item"><label class="signin_label" style="padding-right: 165px;">Content Type&nbsp;:&nbsp;</label>
+                    <!-- <select name="content_type">
+                    <option></option>
+                    <option>Photography</option>
+                    <option>Videography</option>
+                </select> -->
+              </li>
+                <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
+                    <!-- <select name="which_photography">
+                        <option></option>
+                        <option>Advertisement</option>
+                        <option>Aerial</option>
+                        <option>Architectural/Real Estate</option>
+                        <option>Black and White</option>
+                        <option>Event</option>
+                        <option>Fashion</option>
+                        <option>Food</option>
+                        <option>Landscape</option>
+                        <option>Lifestyle</option>
+                        <option>Maternity</option>
+                        <option>Pet</option>
+                        <option>Photojournalism</option>
+                        <option>Portrait</option>
+                        <option>Product</option>
+                        <option>Sports</option>
+                        <option>Studio</option>
+                        <option>Travel</option>
+                        <option>Wildlife</option>
+                        <option>Wedding</option>
+                    </select> -->
+                  </li>
+                        <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
+                        <!-- <select name="which_photography1">
+                                <option>Aerial (Drone)</option>
+                                <option>Time-Lapse</option>
+                                <option>Vlog</option>
+                                <option>Architectural Photographer</option>
+                                <option>Advertisement</option>
+                                <option>Aerial</option>
+                                <option>Architectural/Real Estate</option>
+                                <option>Black and White</option>
+                                <option>Event</option>
+                                <option>Fashion</option>
+                                <option>Food</option>
+                                <option>Landscape</option>
+                                <option>Lifestyle</option>
+                                <option>Maternity</option>
+                                <option>Pet</option>
+                                <option>Photojournalism</option>
+                                <option>Portrait</option>
+                                <option>Product</option>
+                                <option>Sports</option>
+                                <option>Studio</option>
+                                <option>Travel</option>
+                                <option>Wildlife</option>
+                                <option>Wedding</option>
+                            </select> -->
+                          </li>
+                            <li class="item">
+                                <label class="signin_label" style="padding-right: 200px;">User&nbsp;Type&nbsp;:&nbsp;</label>
+                                <!-- <select name="user_type">
+                                    <option></option>
+                                    <option>Photographer</option>
+                                    <option>User</option>
+                                </select> -->
+                            </li>
+            </ul>
+            <!-- <input type="submit" class="btn bt__2 sign_btn" value="Submit">
+            <input type="clear" class="btn bt__2 sign_btn" value="Clear"> -->
+            <!-- </form> -->
+        </div>
+      
 </div> <!-- close content -->
-
       </div>
     </main>    
 <!--==============================Bot_block=================================-->

@@ -322,7 +322,7 @@ $url = str_replace("signup_page.php","",$url);
             <input type="submit" class="btn bt__2 sign_btn" value="Submit">
             <input type="clear" class="btn bt__2 sign_btn" value="Clear">
             </form>
-        </div>        
+        </div>
     </div>
 </div>
       <!--==============================Bot_block=================================-->

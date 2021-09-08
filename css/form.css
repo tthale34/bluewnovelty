@@ -239,13 +239,9 @@
 
 
 #newsletter .btn.bt__2 {
-
 	margin-top: 0 ;
 	margin-left: 16px;
-	padding-top: 4px;
-	padding-bottom: 6px;
-	padding-left: 43px;
-	padding-right: 43px;
+	padding: 5px 62px 10px 8px;
 }
 
 #newsletter a:hover {

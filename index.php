@@ -208,57 +208,64 @@ $url = str_replace("login_page.php","",$url);
 <!-- <center> -->
 <div class="gallery_main">
 	<div class="gallery2">
-        <a target="_blank" href="./images/ad1.jpg">
+        <div class="ad_container">
+        <a target="_blank" href="./images/ad1.jpg" class="ad_img">
             <img src="./images/photographer-selecting-photos-RZPRBXK.jpg" alt="Cinque Terre">
         </a>
         <!-- <div style="display:inline-block; top:20px">
             <a (click)="nav('profile')">View Profile</a> |
             <a (click)="nav('profile')">Book Now</a>
         </div> -->
-            <a style="cursor:pointer;">Weddings Photography</a>
+            <a style="cursor:pointer;" class="ad_info">Weddings Photography</a>
+            </div>
     </div>
 
     <div class="gallery2">
-        <a target="_blank" href="./images/ad2.jpg">
-            <img src="./images/page4_img1.jpg" alt="Forest">
-        </a>
-        <!-- <div class="desc">
-            <a (click)="nav('profile')">View Profile</a> |
-            <a  (click)="nav('profile')">Book Now</a>
-        </div> -->
-        <a style="cursor:pointer;">Portriat Photography</a>
+        <div class="ad_container">
+            <a target="_blank" href="./images/ad2.jpg" class="ad_img">
+                <img src="./images/page4_img1.jpg" alt="Forest">
+            </a>
+            <!-- <div class="desc">
+                <a (click)="nav('profile')">View Profile</a> |
+                <a  (click)="nav('profile')">Book Now</a>
+            </div> -->
+            <a style="cursor:pointer;" class="ad_info">Portriat Photography</a>
+        </div>
     </div>
 
     <div class="gallery2">
-        <a target="_blank" href="./images/ad3.jpg">
-            <img src="./images/professional-female.jpg" alt="Northern Lights">
-        </a>
-        <!-- <div class="desc">
-            <a (click)="nav('profile')">View Profile</a> |
-            <a (click)="nav('profile')">Book Now</a>
-        </div> -->
-        <a style="cursor:pointer;">Event Photography</a>
+        <div class="ad_container">
+            <a target="_blank" href="./images/ad3.jpg" class="ad_img">
+                <img src="./images/professional-female.jpg" alt="Northern Lights">
+            </a>
+            <!-- <div class="desc">
+                <a (click)="nav('profile')">View Profile</a> |
+                <a (click)="nav('profile')">Book Now</a>
+            </div> -->
+            <a style="cursor:pointer;" class="ad_info">Event Photography</a>
+        </div>
     </div>
 
     <div class="gallery2">
-        <a target="_blank" href="./images/ad4.jpg">
-            <img src="./images/casourel3.jpg" alt="Mountains">
-        </a>
-        <!-- <div class="desc">
-            <a (click)="nav('profile')">View Profile</a> |
-            <a (click)="nav('profile')">Book Now</a>
-        </div> -->
-        <a style="cursor:pointer;">Fashion Photography</a>
+        <div class="ad_container">
+            <a target="_blank" href="./images/ad4.jpg" class="ad_img">
+                <img src="./images/casourel3.jpg" alt="Mountains">
+            </a>
+            <!-- <div class="desc">
+                <a (click)="nav('profile')">View Profile</a> |
+                <a (click)="nav('profile')">Book Now</a>
+            </div> -->
+            <a style="cursor:pointer;" class="ad_info">Fashion Photography</a>
+        </div>
     </div>
 </div>
 <!-- </center> -->
   <br>
     <br>
-		<h2>DISCOVER STUNNING GALLERY FROM THE WORLDS BEST CREATORS</h2>
-
-      <section class="content">
+      <section class="content">        
           <div class="container">
-              <div class="row">
+            <h1 id="custom_header">DISCOVER STUNNING GALLERY FROM THE WORLDS BEST CREATORS</h1>
+              <div class="row">              
                   <div class="grid_12">
                       <div class="gallery">
                           <div class="row">

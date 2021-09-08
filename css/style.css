@@ -27,7 +27,13 @@ body {
     position: relative;
     background-color: #000;
     color: #979090;
-    font: 14px/20px 'Open Sans', sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ Ｐゴシック,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+#custom_header{
+    margin-left: 20%;
+    font-size: x-large;
+    max-width: 50%;
+    align-content: stretch;
 }
 
 .ic {
@@ -67,72 +73,6 @@ img {
 
 /****Heads****/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Helvetica', 'sans-serif';
-}
-
-h2 {
-    font-size: 55px;
-    line-height: 35px;
-    position: relative;
-    padding-bottom: 20px;
-}
-
-h2:after {
-    background-color: #a9a9a9;
-    width: 263px;
-    bottom: 0;
-    left: 50%;
-    margin-left: -131px;
-    content: '';
-    position: absolute;
-    display: block;
-    height: 1px;
-}
-
-.page1 h2 {
-    padding-top: 72px;
-    margin-bottom: 19px;
-}
-
-h3 {
-    font-size: 36px;
-    padding-top: 64px;
-    line-height: 40px;
-    position: relative;
-    padding-bottom: 14px;
-    margin-bottom: 15px;
-}
-
-h3:after {
-    background-color: #fff;
-    width: 263px;
-    bottom: 0;
-    left: 50%;
-    margin-left: -131px;
-    content: '';
-    position: absolute;
-    display: block;
-    height: 1px;
-}
-
-.page1 h3 {
-    padding-top: 48px;
-    margin-bottom: 18px;
-}
-
-.page1 h3.head1 {
-    padding-top: 79px;
-    margin-bottom: 23px;
-}
 
 
 /****Lists****/
@@ -243,7 +183,7 @@ a:hover {
 .btn.bt__2 {
     font-size: 20px;
     line-height: 35px;
-    padding: 5px 35px 8px;
+    padding: 5px 62px 10px 8px;
     margin-top: 29px;
 }
 
@@ -465,8 +405,6 @@ header h1 a img {
 .blog .bt__2 {
     padding-top: 4px;
     padding-bottom: 6px;
-    padding-left: 26px;
-    padding-right: 26px;
     margin-top: 25px;
 }
 
@@ -923,24 +861,52 @@ form.example::after {
 display: flex;
 justify-content: center;
 background-color: #fff;
-
+min-height: 380px;
 }
 .gallery2 {
   margin: 30px;
   width: 280px;
   float:right;
 }
-
 .gallery2:hover {
   /* border: 1px solid #777; */
-  color: #1a3fe2;
+  /* color: #1a3fe2; */
 }
 
 .gallery2 img {
   width: 280px;
-  height: 295px;
+  height: 320px;
   border-radius: 25px;
 }
+.ad_container{
+    position: relative;
+}
+.ad_img,
+.ad_info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .ad_info{
+      z-index: 10;
+      border-radius: 25px;
+      width: 80%;
+      background-color: grey;
+      color: #ddd;
+      min-height: 30px;
+      margin-top: 70%;
+      margin-left: 20px;
+      padding-top: 10px;
+      padding-left: 10px;
+      opacity: 0.5;
+  }
+  .ad_info:hover{
+      opacity: 1;
+      color: #ddd;
+  }
+  
 
 .desc {
   padding: 15px;
@@ -1018,4 +984,22 @@ background-color: #fff;
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
+}
+.gallery_holder{
+    /* border:solid thin red; */
+    /* position: absolute; */
+    width: 100%;
+}
+ul.gallery_profile {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+}
+ul.gallery_profile li {
+    display: inline;
+}
+.gallerty_item{
+    width: 280px;
+    padding:10px;
+    height: 300px;
 }
