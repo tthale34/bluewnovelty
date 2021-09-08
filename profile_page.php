@@ -469,7 +469,7 @@
 
     <br class="show-xs">
     <h1 class="h1 no-margin text-overflow">
-      <a href="/MyYouthIsYours">
+      <a href="#">
         Kevin
 </a>    </h1>
 
