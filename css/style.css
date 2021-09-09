@@ -172,19 +172,21 @@ a:hover {
 }
 
 .btn.bt__1 {
-    font-size: 30px;
-    line-height: 35px;
-    padding: 13px 42px 17px;
-    position: absolute;
-    right: 0;
-    top: 26px;
+  cursor: pointer;
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
 }
 
 .btn.bt__2 {
-    font-size: 20px;
-    line-height: 35px;
-    padding: 5px 62px 10px 8px;
-    margin-top: 29px;
+  cursor: pointer;
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
 }
 
 
@@ -907,7 +909,7 @@ min-height: 380px;
       opacity: 1;
       color: #ddd;
   }
-  
+
 
 .desc {
   padding: 15px;

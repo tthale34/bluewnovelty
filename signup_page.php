@@ -1,4 +1,4 @@
-<?php 
+<?php
 $url = 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 $url = str_replace("signup_page.php","",$url);
 ?>
@@ -57,7 +57,7 @@ $url = str_replace("signup_page.php","",$url);
 			$('#stuck_container').tmStickUp({});
 			$('.gallery a.gal_item').touchTouch();
 			$('#re_password').change(function(){
-                
+
                 if ($('#re_password').val() != $('#password').val()) {
                     alert("passed");
                     $('#re_password').val("");
@@ -130,13 +130,13 @@ $url = str_replace("signup_page.php","",$url);
   color: white;
 }
 .strip{
-  background: #fff; 
+  background: #fff;
 }
 .signin_label{
     font-family: 'Bahnschrift', Courier, monospace;
     font-weight: bolder;
     font-size: 180%;
-    
+
 }
 .signup_info{
     margin-left: 10%;
@@ -148,10 +148,33 @@ $url = str_replace("signup_page.php","",$url);
 .item{
     margin: 40px;
 }
+.item
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.item
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 .sign_btn{
-    margin-right: 10px;
+	width: 30%;
     cursor: pointer;
-    min-width: 120px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+
 }
 .sign_btn:hover{
     color: #1a3fe2;
@@ -202,7 +225,7 @@ $url = str_replace("signup_page.php","",$url);
                         <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                         </div>
-  
+
                       <div class="menu_block">
                           <nav class="horizontal-nav full-width horizontalNav-notprocessed">
                             <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>

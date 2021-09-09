@@ -1,4 +1,4 @@
-<?php 
+<?php
 $url = 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 $url = str_replace("login_page.php","",$url);
 ?>
@@ -115,13 +115,13 @@ $url = str_replace("login_page.php","",$url);
   color: white;
 }
 .strip{
-  background: #fff; 
+  background: #fff;
 }
 .signin_label{
     font-family: 'Bahnschrift', Courier, monospace;
     font-weight: bolder;
     font-size: 180%;
-    
+
 }
 .signup_info{
     margin-left: 10%;
@@ -131,12 +131,37 @@ $url = str_replace("login_page.php","",$url);
     padding: 5%;
 }
 .item{
-    margin: 40px;
+    margin-left: 40px;
+}
+.item
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 .sign_btn{
-    min-width: 120px;
+	width: 30%;
     cursor: pointer;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+
 }
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
 .sign_btn:hover{
     color: #1a3fe2;
 }
@@ -189,7 +214,7 @@ $url = str_replace("login_page.php","",$url);
                         <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                         </div>
-  
+
                       <div class="menu_block">
                           <nav class="horizontal-nav full-width horizontalNav-notprocessed">
                             <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
@@ -210,17 +235,19 @@ $url = str_replace("login_page.php","",$url);
     <div class="signup_info">
         <div <?php if(isset($_GET['invalidLogin'])){echo 'style="display:inline;"';}else { echo 'style="display:none;"';}?>><label class="invalidUser">Invalid User credentails entered.</label></div>
         <div>
-            <form method="post" action="./login.php">
             <ul style="padding:10px;">
+							<form method="post" action="./login.php">
+
                 <li class="item"><label class="signin_label" style="padding-right: 250px;">Username&nbsp;:&nbsp;</label>
                     <input class="form-control" type="text" name="username"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 250px;">Password&nbsp;:&nbsp;</label>
-                    <input class="form-control" type="password" name="password"></li>                
-            </ul>
+                    <input class="form-control" type="password" name="password"></li>
+
             <input type="submit" class="btn bt__2 sign_btn" value="Submit">
             <input type="clear" class="btn bt__2 sign_btn" value="Clear">
             </form>
-        </div>        
+						  </ul>
+        </div>
     </div>
 </div>
       <!--==============================Bot_block=================================-->
