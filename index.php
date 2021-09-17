@@ -24,9 +24,6 @@ $url = str_replace("login_page.php","",$url);
 		<link rel="stylesheet" href="./css/camera.css">
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" href="./css/grid.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 		<script src="./js/jquery.js"></script>
 		<script src="./js/jquery-migrate-1.1.1.js"></script>
 		<script src="./js/script.js"></script>
@@ -72,7 +69,7 @@ $url = str_replace("login_page.php","",$url);
         <style type="text/css">
 				.home_image{
 						width: 100%;
-						height: 540px;
+						height: 100%;
 						background-position: center;
 						background-repeat: no-repeat;
 						background-size: cover;
@@ -103,17 +100,17 @@ $url = str_replace("login_page.php","",$url);
 
 				.tutorial_text1 {
 					top: 75px;
-						left: 583px;
+						left: 873px;
 						padding: 86px;
 						width: 571px;
-						line-height: 1.1;
+						line-height: 1.6;
 				}
 
 				.tutorial_text2 {
-    top: 725px;
+    top: 1025px;
     padding: 45px;
-    width: 591px;
-    line-height: 1.1;
+    width: 571px;
+    line-height: 1.6;
 }
 
 				.tutorial_holder {
@@ -127,7 +124,7 @@ $url = str_replace("login_page.php","",$url);
 				}
 
 				#logo {
-						font-family: 'Roboto', sans-serif;
+						font-family: 'Bahnschrift', Courier, monospace;
 						cursor: pointer;
 						padding-left: 10px;
 						padding-top: 10px;
@@ -179,7 +176,7 @@ $url = str_replace("login_page.php","",$url);
                             </form>
                         </div>
                       <div class="">                        
-                          <nav class="login_nav">
+                          <nav class="" style="float:right;">
                               <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
                                   <!--<li><a class="btn btn-primary" (click)="nav('login')">LOGIN</a></li>
                                   <li><a class="btn btn-primary" (click)="nav('sign-up')">SIGN UP</a></li>
@@ -203,51 +200,72 @@ $url = str_replace("login_page.php","",$url);
   
 </div>
   </header>
-  <div class="main">
-  <div class="tutorial_holder">
-          <img src="./images/first_img.jpg" class="home_image">
-          <div class="tutorial_text tutorial_text1" responsive>Take your freelance career in content creation to the next level.
-          </div>
-          <!-- <div style="width: 300px;height: 300px; border: dotted thin white;border-radius: 20px; float: left;">img left</div> -->
-          <span>&nbsp;&nbsp;&nbsp;</span>
-          <!-- <div style="width: 300px;height: 300px; border: dotted thin white; border-radius: 20px; float: left;">img right</div> -->
-          <img src="./images/second_img.jpg" class="home_image">
-          <div class="tutorial_text tutorial_text2" responsive>“Book a Photographer or freelance career in content creating Videographer Now.”.
-          </div>
-      </div>
+  <div class="main"><br>
+    
+		
+<br>
       <!--=====================Content======================-->
+      <?php include('./slider_img.php');?>
 <!-- <center> -->
 <div class="gallery_main">
-    <?php
-    // $mainClass = new main();
-    $connection = new mysqli('localhost', 'root', '', 'bluenovelty');
-    if ($connection->error) {
-        Echo "Could not connect to db";
-    }
-    
-    $sql = "SELECT * FROM adverts limit 4;";
-    $query_results = $connection->query($sql);
-    while($row = $query_results->fetch_assoc()):
-    ?>
 	<div class="gallery2">
         <div class="ad_container">
-            <a target="_blank" href="<?php echo $row["location"];?>" class="ad_img">
-                <img src="<?php echo $row["location"];?>" alt="Cinque Terre">
+        <a target="_blank" href="./images/ad1.jpg" class="ad_img">
+            <img src="./images/photographer-selecting-photos-RZPRBXK.jpg" alt="Cinque Terre">
+        </a>
+        <!-- <div style="display:inline-block; top:20px">
+            <a (click)="nav('profile')">View Profile</a> |
+            <a (click)="nav('profile')">Book Now</a>
+        </div> -->
+            <a style="cursor:pointer;" class="ad_info">Weddings Photography</a>
+            </div>
+    </div>
+
+    <div class="gallery2">
+        <div class="ad_container">
+            <a target="_blank" href="./images/ad2.jpg" class="ad_img">
+                <img src="./images/page4_img1.jpg" alt="Forest">
             </a>
-            <a style="cursor:pointer;" class="ad_info"><?php echo $row["name"];?></a>
+            <!-- <div class="desc">
+                <a (click)="nav('profile')">View Profile</a> |
+                <a  (click)="nav('profile')">Book Now</a>
+            </div> -->
+            <a style="cursor:pointer;" class="ad_info">Portriat Photography</a>
         </div>
     </div>
-    <?php 
-    endwhile;
-    ?>
+
+    <div class="gallery2">
+        <div class="ad_container">
+            <a target="_blank" href="./images/ad3.jpg" class="ad_img">
+                <img src="./images/professional-female.jpg" alt="Northern Lights">
+            </a>
+            <!-- <div class="desc">
+                <a (click)="nav('profile')">View Profile</a> |
+                <a (click)="nav('profile')">Book Now</a>
+            </div> -->
+            <a style="cursor:pointer;" class="ad_info">Event Photography</a>
+        </div>
+    </div>
+
+    <div class="gallery2">
+        <div class="ad_container">
+            <a target="_blank" href="./images/ad4.jpg" class="ad_img">
+                <img src="./images/casourel3.jpg" alt="Mountains">
+            </a>
+            <!-- <div class="desc">
+                <a (click)="nav('profile')">View Profile</a> |
+                <a (click)="nav('profile')">Book Now</a>
+            </div> -->
+            <a style="cursor:pointer;" class="ad_info">Fashion Photography</a>
+        </div>
+    </div>
 </div>
 <!-- </center> -->
   <br>
     <br>
-      <section class="content">
+      <section class="content">        
           <div class="container">
             <h1 id="custom_header">DISCOVER STUNNING GALLERY FROM THE WORLDS BEST CREATORS</h1>
-            <hr>
               <div class="row">              
                   <div class="grid_12">
                       <div class="gallery">
@@ -365,7 +383,7 @@ $url = str_replace("login_page.php","",$url);
           <div class="row">
               <div class="grid_12">
                   <div class="footer_socials">
-                      <a href="#" class="fa fa-youtube"></a>
+                      <a href="#" class="fa fa-twitter"></a>
                       <a href="#" class="fa fa-facebook"></a>
                       <a href="#" class="fa fa-google-plus"></a>
                       <a href="#" class="fa fa-pinterest"></a>

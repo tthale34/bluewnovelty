@@ -6,20 +6,19 @@
     <meta name="csrf-token" content="0SKu3IuusknbRy30jGqTW29VqExVxeOsiKlXFFig"/>
 
     <title>Trian Studios | Unleash your inner creative side.</title>
-
+<!-- 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="apple-touch-icon" href="https://trianstudios.com/assets/images/logos/logo_light.svg"/>
     <link rel="apple-touch-icon" sizes="76x76" href="https://trianstudios.com/assets/images/logos/logo_light.svg"/>
     <link rel="apple-touch-icon" sizes="120x120" href="https://trianstudios.com/assets/images/logos/logo_light.svg"/>
     <link rel="apple-touch-icon" sizes="152x152" href="https://trianstudios.com/assets/images/logos/logo_light.svg"/>
-    <link rel="icon" type="image/x-icon" href="https://trianstudios.com/assets/images/logos/logo_light.svg" />
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="icon" type="image/x-icon" href="https://trianstudios.com/assets/images/logos/logo_light.svg" /> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-touch-fullscreen" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
     <meta content="" name="description" />
-    <meta content="" name="author" />
-    <!-- BEGIN PLUGINS -->
-    
+    <meta content="" name="author" /> -->
+    <!-- BEGIN PLUGINS -->    
     <link href="https://trianstudios.com/assets/css/custom.css" rel="stylesheet" type="text/css" />
     <link href="https://trianstudios.com/assets/css/haswell.css?6138e73f224675.29721775" rel="stylesheet" type="text/css" />
     <link href="https://trianstudios.com/assets/css/icons-fonts.css?6138e73f224744.62078834" rel="stylesheet" type="text/css" />
@@ -28,66 +27,16 @@
     <link href="https://trianstudios.com/assets/css/font-awesome.min.css?6138e73f224875.82774636" rel="stylesheet" type="text/css" />
     <link href="https://trianstudios.com/assets/css/swiper.min.css?6138e73f2248d2.49845791" rel="stylesheet" type="text/css" media="screen" />
     <!-- END PLUGINS -->
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
-
     <!-- BEGIN PAGES CSS -->
     <link class="main-stylesheet" href="https://trianstudios.com/assets/css/pages.min.css?6138e73f224933.91951903" rel="stylesheet" type="text/css" />
     <link class="main-stylesheet" href="https://trianstudios.com/assets/css/pages-icons.min.css?6138e73f224993.26555516" rel="stylesheet" type="text/css" />
     <!-- BEGIN PAGES CSS -->
-
     <link href="https://trianstudios.com/assets/css/animate.min.css?6138e73f2249f0.45839535" rel="stylesheet" type="text/css" />
-
-    <link href="https://trianstudios.com/assets/css/style.css?6138e73f224a56.79191652" rel="stylesheet" type="text/css" />
-
-        <style>
-        .featured_project_img {
-            z-index: -1;
-            height: 80%;
-            object-fit: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-
-        @media (max-width: 767px) {
-            .featured_project_img {
-                height: auto;
-            }
-        }
-
-        .fs-30 {
-            font-size: 30px;
-        }
-
-        .img-drop-shadow-5 {
-            filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
-        }
-
-        .lh-1-55 {
-            line-height: 1.55 !important;
-        }
-    </style>
-        <style>
-            .inverted-text{
-                font-size: 134px;
-                position: absolute;
-                text-align: center;
-                opacity: 0.05;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                height: inherit;
-                -webkit-text-stroke: #4caf50;
-                -webkit-text-stroke-width: 1px;
-            }
-        </style>
-    
     <link rel="stylesheet" href="https://trianstudios.com/assets/css/main.css?6138e73f224ae7.48472586" />
-
     <link rel="stylesheet" href="https://trianstudios.com/assets/css/responsive.css?6138e73f224b57.39290980" />
 
-    <script src='https://www.google.com/recaptcha/api.js?render=6Lcn96waAAAAAH3nOZQxBSl6k36_1TMe85FOwVeS'></script>
+    <!-- <script src='https://www.google.com/recaptcha/api.js?render=6Lcn96waAAAAAH3nOZQxBSl6k36_1TMe85FOwVeS'></script> -->
 
 </head>
 <body class="pace-white scrollbar-hidden">
@@ -116,9 +65,9 @@
                                                 <div class="col-md-6 no-padding col-xs-10 col-xs-offset-1">
                                                     <h1 class="light sm-text-center" data-swiper-parallax="-15%" style="color: #ffffff">
                                                     Take your freelance career in content creation to the next level.</h1>
-                                                    <h4 class="sm-text-center" style="color: #ffffff">Next Level.</h4>
+                                                    <!-- <h4 class="sm-text-center" style="color: #ffffff">Next Level.</h4>
                                                     <h5 class="block-title text-white sm-text-center">Sign Up</h5>                                                    
-                                                    <p class="fs-12 font-arial hint-text sm-text-center" style="color: #ffffff">Additional Info</p>
+                                                    <p class="fs-12 font-arial hint-text sm-text-center" style="color: #ffffff">Additional Info</p> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -147,9 +96,9 @@
                                                 <div class="col-md-6 no-padding col-xs-10 col-xs-offset-1">
                                                     <h1 class="light sm-text-center" data-swiper-parallax="-15%" style="color: #000000">
                                                     “Book a Photographer or freelance career in content creating Videographer Now.”.</h1>
-                                                    <h4 class="sm-text-center" style="color: #000000">Bookings made easy.</h4>
+                                                    <!-- <h4 class="sm-text-center" style="color: #000000">Bookings made easy.</h4>
                                                     <h5 class="block-title text-white sm-text-center">Book</h5>
-                                                    <p class="fs-12 font-arial hint-text sm-text-center" style="color: #000000">Additional Info.</p>
+                                                    <p class="fs-12 font-arial hint-text sm-text-center" style="color: #000000">Additional Info.</p> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -163,8 +112,8 @@
                 </div>
                 <!-- BEGIN ANIMATED MOUSE -->
                 <!-- Add Navigation -->
-                <div class="swiper-navigation swiper-dark-solid swiper-button-prev auto-reveal"></div>
-                <div class="swiper-navigation swiper-dark-solid swiper-button-next auto-reveal"></div>
+                <!-- <div class="swiper-navigation swiper-dark-solid swiper-button-prev auto-reveal"></div>
+                <div class="swiper-navigation swiper-dark-solid swiper-button-next auto-reveal"></div> -->
             </div>
         </div>
         <!-- END SLIDER -->
@@ -176,22 +125,19 @@
     <script type="text/javascript" src="https://trianstudios.com/assets/js/pages.image.loader.js"></script>
     <script type="text/javascript" src="https://trianstudios.com/assets/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://trianstudios.com/assets/js/bootstrap.min.js"></script>
-
     <!-- BEGIN SWIPER DEPENDENCIES -->
     <script type="text/javascript" src="https://trianstudios.com/assets/js/modernizr.custom.js"></script>
     <script type="text/javascript" src="https://trianstudios.com/assets/js/swiper.jquery.js"></script>
     <script type="text/javascript" src="https://trianstudios.com/assets/js/velocity.min.js"></script>
     <script type="text/javascript" src="https://trianstudios.com/assets/js/velocity.ui.js"></script>
-
     <!-- BEGIN RETINA IMAGE LOADER -->
-    <script type="text/javascript" src="https://trianstudios.com/assets/js/jquery.unveil.min.js"></script>
-    <script type="text/javascript" src="https://trianstudios.com/assets/js/jquery.validate.min.js"></script>
+    <!-- <script type="text/javascript" src="https://trianstudios.com/assets/js/jquery.unveil.min.js"></script>
+    <script type="text/javascript" src="https://trianstudios.com/assets/js/jquery.validate.min.js"></script> -->
     <!-- END VENDOR JS -->
     <!-- BEGIN PAGES FRONTEND LIB -->
     <script type="text/javascript" src="https://trianstudios.com/assets/js/pages.js"></script>
     <script type="text/javascript" src="https://trianstudios.com/assets/js/pages.frontend.min.js"></script>
     <!-- END PAGES LIB -->
-
     <!-- BEGIN YOUR CUSTOM JS -->
     <script type="text/javascript" src="https://trianstudios.com/assets/js/helper.js"></script>
     <script type="text/javascript" src="https://trianstudios.com/assets/js/search.js"></script>
@@ -201,13 +147,13 @@
     <script data-ad-client="ca-pub-5921070124201244" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- END PAGES LIB -->
 
-        <script>
+        <!-- <script>
         let SEARCH_ROUTE = 'https://trianstudios.com/search',
             APP_NAME = 'Trian Studios',
             HELPER = helper(),
             SERVICES_ROUTE = 'https://trianstudios.com/our-services',
             PROJECT_ROUTE = 'https://trianstudios.com/our-work';
     </script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
 </body>
 </html>
