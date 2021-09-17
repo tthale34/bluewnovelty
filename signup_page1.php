@@ -202,59 +202,105 @@ $url = str_replace("login_page.php","",$url);
   </header>
   <div class="main">
       <!--=====================Content======================-->
-      <?php include('./slider_img.php');?>
-      
-<!-- <center> -->
-<div class="gallery_main">
-	<div class="gallery2">
-        <div class="ad_container">
-        <a target="_blank" href="./images/ad1.jpg" class="ad_img">
-            <img src="./images/photographer-selecting-photos-RZPRBXK.jpg" alt="Cinque Terre">
-        </a>
-        <!-- <div style="display:inline-block; top:20px">
-            <a (click)="nav('profile')">View Profile</a> |
-            <a (click)="nav('profile')">Book Now</a>
-        </div> -->
-            <a style="cursor:pointer;" class="ad_info">Weddings Photography</a>
-            </div>
-    </div>
-
-    <div class="gallery2">
-        <div class="ad_container">
-            <a target="_blank" href="./images/ad2.jpg" class="ad_img">
-                <img src="./images/page4_img1.jpg" alt="Forest">
-            </a>
-            <!-- <div class="desc">
-                <a (click)="nav('profile')">View Profile</a> |
-                <a  (click)="nav('profile')">Book Now</a>
-            </div> -->
-            <a style="cursor:pointer;" class="ad_info">Portriat Photography</a>
-        </div>
-    </div>
-
-    <div class="gallery2">
-        <div class="ad_container">
-            <a target="_blank" href="./images/ad3.jpg" class="ad_img">
-                <img src="./images/professional-female.jpg" alt="Northern Lights">
-            </a>
-            <a style="cursor:pointer;" class="ad_info">Event Photography</a>
-        </div>
-    </div>
-
-    <div class="gallery2">
-        <div class="ad_container">
-            <a target="_blank" href="./images/ad4.jpg" class="ad_img">
-                <img src="./images/casourel3.jpg" alt="Mountains">
-            </a>
-            <!-- <div class="desc">
-                <a (click)="nav('profile')">View Profile</a> |
-                <a (click)="nav('profile')">Book Now</a>
-            </div> -->
-            <a style="cursor:pointer;" class="ad_info">Fashion Photography</a>
-        </div>
-    </div>
-    <a href="#" class="ws_next" style="position:absolute;top:10%;"></a>
-    <a href="#" class="ws_pre"></a>
+      <form method="post" action="./sign_up.php">
+            <ul style="padding:10px;">
+                <li class="item"><label class="signin_label" style="padding-right: 250px;">Name&nbsp;:&nbsp;</label>
+                <input class="form-control" type="text" name="name"></li>
+                <li class="item"><label class="signin_label" style="padding-right: 211px;">Surname&nbsp;:&nbsp;</label>
+                <input class="form-control" type="text" name="surname"></li>
+                <li class="item"><label class="signin_label" style="padding-right: 137px;">Company Name&nbsp;:&nbsp;</label>
+                <input class="form-control" type="text" name="company_name"></li>
+                <li class="item">
+                    <label class="signin_label" style="padding-right: 250px;">Email&nbsp;:&nbsp;</label>
+                    <input class="form-control" type="text" name="email"></li>
+                <li class="item">
+                    <label class="signin_label" style="padding-right: 200px;">Password&nbsp;:&nbsp;</label>
+                    <input class="form-control" type="password" name="password" id="password"></li>
+                <li class="item">
+                    <label class="signin_label" style="padding-right: 95px;">Re-enter Password&nbsp;:&nbsp;</label>
+                    <input class="form-control" type="password" name="re_password" id="re_password" change="checkPasswordMatch()"/></li>
+                <li class="item" style="display:none;" id="pass_not_match">
+                    <label class="" style="padding-right: 250px;color: red;">Passwords do not match</label>
+                    </li>
+                <li class="item"><label class="signin_label" style="padding-right: 255px;">D.O.B&nbsp;:&nbsp;</label>
+                <input class="form-control" type="text" name="dob"></li>
+                <li class="item"><label class="signin_label" style="padding-right: 228px;">Gender&nbsp;:&nbsp;</label>
+                <select name="gender">
+                    <option></option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select></li>
+                <li class="item"><label class="signin_label" style="padding-right: 165px;">Content Type&nbsp;:&nbsp;</label>
+                    <select name="content_type">
+                    <option></option>
+                    <option>Photography</option>
+                    <option>Videography</option>
+                </select></li>
+                <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
+                    <select name="which_photography">
+                        <option></option>
+                        <option>Advertisement</option>
+                        <option>Aerial</option>
+                        <option>Architectural/Real Estate</option>
+                        <option>Black and White</option>
+                        <option>Event</option>
+                        <option>Fashion</option>
+                        <option>Food</option>
+                        <option>Landscape</option>
+                        <option>Lifestyle</option>
+                        <option>Maternity</option>
+                        <option>Pet</option>
+                        <option>Photojournalism</option>
+                        <option>Portrait</option>
+                        <option>Product</option>
+                        <option>Sports</option>
+                        <option>Studio</option>
+                        <option>Travel</option>
+                        <option>Wildlife</option>
+                        <option>Wedding</option>
+                    </select></li>
+                        <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
+                        <select name="which_photography1">
+                                <option>Aerial (Drone)</option>
+                                <option>Time-Lapse</option>
+                                <option>Vlog</option>
+                                <option>Architectural Photographer</option>
+                                <option>Advertisement</option>
+                                <option>Aerial</option>
+                                <option>Architectural/Real Estate</option>
+                                <option>Black and White</option>
+                                <option>Event</option>
+                                <option>Fashion</option>
+                                <option>Food</option>
+                                <option>Landscape</option>
+                                <option>Lifestyle</option>
+                                <option>Maternity</option>
+                                <option>Pet</option>
+                                <option>Photojournalism</option>
+                                <option>Portrait</option>
+                                <option>Product</option>
+                                <option>Sports</option>
+                                <option>Studio</option>
+                                <option>Travel</option>
+                                <option>Wildlife</option>
+                                <option>Wedding</option>
+                            </select></li>
+                            <li class="item">
+                                <label class="signin_label" style="padding-right: 200px;">User&nbsp;Type&nbsp;:&nbsp;</label>
+                                <select name="user_type">
+                                    <option></option>
+                                    <option>Photographer</option>
+                                    <option>User</option>
+                                </select>
+                            </li>
+                            <li class="item">
+                                <label class="signin_label" style="padding-right: 160px;">Profile&nbsp;Image&nbsp;:&nbsp;</label>
+                                <input class="form-control" type="file" name="profile_img">
+                            </li>
+            </ul>
+            <input type="submit" class="btn bt__2 sign_btn" value="Submit">
+            <input type="clear" class="btn bt__2 sign_btn" value="Clear">
+            </form>
 </div>
 <!-- </center> -->
   <br>
