@@ -200,12 +200,10 @@ $url = str_replace("login_page.php","",$url);
   
 </div>
   </header>
-  <div class="main"><br>
-    
-		
-<br>
+  <div class="main">
       <!--=====================Content======================-->
       <?php include('./slider_img.php');?>
+      
 <!-- <center> -->
 <div class="gallery_main">
 	<div class="gallery2">

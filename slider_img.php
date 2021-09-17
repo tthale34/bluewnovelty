@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="csrf-token" content="0SKu3IuusknbRy30jGqTW29VqExVxeOsiKlXFFig"/>
 
-    <title>Trian Studios | Unleash your inner creative side.</title>
+    <title></title>
 <!-- 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="apple-touch-icon" href="https://trianstudios.com/assets/images/logos/logo_light.svg"/>
@@ -47,12 +47,12 @@
             <div class="swiper-container" id="hero">
                 <div class="swiper-wrapper">
                                             <!-- BEGIN SLIDE -->
-                        <div class="swiper-slide fit">
+                        <div class="swiper-slide fit" style="min-height:800px">
                             <!-- BEGIN IMAGE PARRALAX -->
                             <div class="slider-wrapper">
                                 <div class="background-wrapper" data-swiper-parallax="30%">
                                     <!-- YOUR BACKGROUND IMAGE HERE, YOU CAN ALSO USE IMG with the same classes -->
-                                    <div class="background" data-pages-bg-image="./images/first_img.jpg" style="background-color: #af84f1"></div>
+                                    <div class="background" data-pages-bg-image="./images/first_img.jpg" style="background-color: #af84f1;"></div>
                                 </div>
                             </div>
                             <!-- END IMAGE PARRALAX -->
@@ -78,7 +78,7 @@
                         </div>
                         <!-- END SLIDE -->
                                             <!-- BEGIN SLIDE -->
-                        <div class="swiper-slide fit">
+                        <div class="swiper-slide fit" style="min-height:800px">
                             <!-- BEGIN IMAGE PARRALAX -->
                             <div class="slider-wrapper">
                                 <div class="background-wrapper" data-swiper-parallax="30%">
