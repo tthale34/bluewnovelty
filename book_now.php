@@ -31,6 +31,9 @@ $url = str_replace("signup_page.php","",$url);
 		<script src="./js/camera.js"></script>
 		<!--[if (gt IE 9)|!(IE)]><!-->
 		<script src="./js/jquery.mobile.customized.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
+<script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
 		<!--<![endif]-->
 		<script>
 		$(document).ready(function(){
@@ -73,6 +76,48 @@ $url = str_replace("signup_page.php","",$url);
             alert("check pssword");
         }
 		</script>
+
+		<!-- Importing jquery cdn -->
+	 <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	 </script>
+
+	 <script src=
+"https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			 integrity=
+"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			 crossorigin="anonymous">
+	 </script>
+
+	 <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			 integrity=
+"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			 crossorigin="anonymous">
+	 </script>
+
+	 <!-- Importing icon cdn -->
+	 <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	 <!-- Importing core bootstrap cdn -->
+	 <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			 integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			 crossorigin="anonymous">
+
+	 <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			 integrity=
+"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			 crossorigin="anonymous">
+	 </script>
+
+	 <!-- Importing datepicker cdn -->
+	 <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+	 </script>
         <style type="text/css">
 .tutorial_text {
     position: absolute;
@@ -205,19 +250,8 @@ select {
     }
   }
 </style>
-		<!--[if lt IE 8]>
-		<div style=' clear: both; text-align:center; position: relative;'>
-			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-			</a>
-            git remote add origin https://github.com/tthale34/bluewnovelty.git
-            git push -u origin main
-		</div>
-		<![endif]-->
-		<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<link rel="stylesheet" media="screen" href="css/ie.css">
-		<![endif]-->
+
+
 	</head>
 	<body class="page1" id="top">
 <!--==============================header=================================-->
@@ -259,10 +293,19 @@ select {
     <div class="signup_info">
         <div <?php if(isset($_GET['invalidLogin'])){echo 'style="display:inline;"';}else { echo 'style="display:none;"';}?>><label class="invalidUser">Invalid User credentails entered.</label></div>
         <div>
+					<section>
+	  <div class="box">
+	    <div class="container">
+	      <div id="calendar">
+	      </div>
+	    </div>
+	  </div>
+	</section>
+
 
             <form method="post" action="./sign_up.php" id="signup_form">
             <ul style="padding:10px;">
-						<center><h1>Sign Up as A Creative</h1></center>
+							<center><h1>Book for an Event</h1></center>
 
                 <li class="item"><label class="signin_label" style="padding-right: 250px;">Name&nbsp;:&nbsp;</label>
                 <input class="form-control" type="text" name="name"></li>
@@ -273,90 +316,81 @@ select {
                 <li class="item">
                     <label class="signin_label" style="padding-right: 250px;">Email&nbsp;:&nbsp;</label>
                     <input class="form-control" type="text" name="email"></li>
-                <li class="item">
-                    <label class="signin_label" style="padding-right: 200px;">Password&nbsp;:&nbsp;</label>
-                    <input class="form-control" type="password" name="password" id="password"></li>
-                <li class="item">
-                    <label class="signin_label" style="padding-right: 95px;">Re-enter Password&nbsp;:&nbsp;</label>
-                    <input class="form-control" type="password" name="re_password" id="re_password" change="checkPasswordMatch()"/></li>
-                <li class="item" style="display:none;" id="pass_not_match">
-                    <label class="" style="padding-right: 250px;color: red;">Passwords do not match</label>
-                    </li>
-                <li class="item"><label class="signin_label" style="padding-right: 255px;">D.O.B&nbsp;:&nbsp;</label>
-                <input class="form-control" type="text" name="dob"></li>
-                <li class="item"><label class="signin_label" style="padding-right: 228px;">Gender&nbsp;:&nbsp;</label>
-                <select name="gender">
-                    <option></option>
-                    <option>Male</option>
-                    <option>Female</option>
-                </select></li>
-                <li class="item"><label class="signin_label" style="padding-right: 165px;">Content Type&nbsp;:&nbsp;</label>
+										<!-- Container class contains the date field -->
+												<div class="form-group m-1">
+														<label class="font-weight-bold" for="dob">
+															Date of your event
+														</label>
+
+														<!-- Input field along with
+																calendar icon and -->
+														<div class="input-group date">
+																<!-- Sets the calendar icon -->
+																<span class="input-group-prepend">
+																		<span class="input-group-text">
+																				<i class="fa fa-calendar"
+																						onclick="setDatepicker(this)">
+																				</i>
+																		</span>
+																</span>
+
+																<!-- Accepts the input from calendar -->
+																<input class="form-control" type="text"
+																		name="event_date" id="event_date" value="">
+														</div>
+												</div>
+
+										<!-- JavaScript to control the actions
+												 of the date picker -->
+										<script type="text/javascript">
+												function setDatepicker(_this) {
+
+														/* Get the parent class name so we
+																can show date picker */
+														let className = $(_this).parent()
+																.parent().parent().attr('class');
+
+														// Remove space and add '.'
+														let removeSpace = className.replace(' ', '.');
+
+														// jQuery class selector
+														$("." + removeSpace).datepicker({
+																format: "dd/mm/yyyy",
+
+																// Positioning where the calendar is placed
+																orientation: "bottom auto",
+																// Calendar closes when cursor is
+																// clicked outside the calendar
+																autoclose: true,
+																showOnFocus: "false"
+														});
+												}
+										</script>
+
+                <li class="item"><label class="signin_label" style="padding-right: 165px;">Event Type&nbsp;:&nbsp;</label>
                     <select name="content_type">
-                    <option></option>
-                    <option>Photography</option>
-                    <option>Videography</option>
+											<option></option>
+											<option>Advertisement</option>
+											<option>Aerial</option>
+											<option>Architectural/Real Estate</option>
+											<option>Black and White</option>
+											<option>Event</option>
+											<option>Fashion</option>
+											<option>Food</option>
+											<option>Landscape</option>
+											<option>Lifestyle</option>
+											<option>Maternity</option>
+											<option>Pet</option>
+											<option>Photojournalism</option>
+											<option>Portrait</option>
+											<option>Product</option>
+											<option>Sports</option>
+											<option>Studio</option>
+											<option>Travel</option>
+											<option>Wildlife</option>
+											<option>Wedding</option>
                 </select></li>
-                <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
-                    <select name="which_photography">
-                        <option></option>
-                        <option>Advertisement</option>
-                        <option>Aerial</option>
-                        <option>Architectural/Real Estate</option>
-                        <option>Black and White</option>
-                        <option>Event</option>
-                        <option>Fashion</option>
-                        <option>Food</option>
-                        <option>Landscape</option>
-                        <option>Lifestyle</option>
-                        <option>Maternity</option>
-                        <option>Pet</option>
-                        <option>Photojournalism</option>
-                        <option>Portrait</option>
-                        <option>Product</option>
-                        <option>Sports</option>
-                        <option>Studio</option>
-                        <option>Travel</option>
-                        <option>Wildlife</option>
-                        <option>Wedding</option>
-                    </select></li>
-                        <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
-                        <select name="which_photography1">
-                                <option>Aerial (Drone)</option>
-                                <option>Time-Lapse</option>
-                                <option>Vlog</option>
-                                <option>Architectural Photographer</option>
-                                <option>Advertisement</option>
-                                <option>Aerial</option>
-                                <option>Architectural/Real Estate</option>
-                                <option>Black and White</option>
-                                <option>Event</option>
-                                <option>Fashion</option>
-                                <option>Food</option>
-                                <option>Landscape</option>
-                                <option>Lifestyle</option>
-                                <option>Maternity</option>
-                                <option>Pet</option>
-                                <option>Photojournalism</option>
-                                <option>Portrait</option>
-                                <option>Product</option>
-                                <option>Sports</option>
-                                <option>Studio</option>
-                                <option>Travel</option>
-                                <option>Wildlife</option>
-                                <option>Wedding</option>
-                            </select></li>
-                            <li class="item">
-                                <label class="signin_label" style="padding-right: 200px;">User&nbsp;Type&nbsp;:&nbsp;</label>
-                                <select name="user_type">
-                                    <option></option>
-                                    <option>Photographer</option>
-                                    <option>User</option>
-                                </select>
-                            </li>
-                            <li class="item">
-                                <label class="signin_label" style="padding-right: 160px;">Profile&nbsp;Image&nbsp;:&nbsp;</label>
-                                <input class="form-control" type="file" name="profile_img">
-                            </li>
+
             </ul>
             <input type="submit" class="btn bt__2 sign_btn" value="Submit">
             <input type="clear" class="btn bt__2 sign_btn" value="Clear">

@@ -62,7 +62,6 @@ p {
 }
 
 input {
-    border-radius: 15px !important;
     outline: none !important;
 }
 
@@ -316,6 +315,7 @@ header h1 a img {
 
 .page1 .content {
     padding-bottom: 81px;
+    background-color: #fff !important; 
 }
 
 .cont__1 h3 {

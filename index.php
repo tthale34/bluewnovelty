@@ -122,6 +122,10 @@ $url = str_replace("login_page.php","",$url);
 				.tutorial_holder2 {
 						display: inline-block;
 				}
+				.search_input{
+					border-radius: 15px;
+					width: 350px;
+				}
 
 				#logo {
 						font-family: 'Bahnschrift', Courier, monospace;
@@ -171,11 +175,11 @@ $url = str_replace("login_page.php","",$url);
                     <h1 id="logo">Blue Novelty</h1>
                         <div class="" style="margin-left:40%;position: absolute;top: 30px;left:0;">
                             <form action="/action_page.php">
-                            <input type="text" placeholder="Search.." name="search">
+                            <input class="search_input" type="text" placeholder="Search.." name="search">
                             <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
-                      <div class="">                        
+                      <div class="">
                           <nav class="" style="float:right;">
                               <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
                                   <!--<li><a class="btn btn-primary" (click)="nav('login')">LOGIN</a></li>
@@ -197,13 +201,13 @@ $url = str_replace("login_page.php","",$url);
       </div>
 
 			<div class="topnav">
-  
+
 </div>
   </header>
   <div class="main">
       <!--=====================Content======================-->
       <?php include('./slider_img.php');?>
-      
+
 <!-- <center> -->
 <div class="gallery_main">
 	<div class="gallery2">
@@ -259,10 +263,10 @@ $url = str_replace("login_page.php","",$url);
 <!-- </center> -->
   <br>
     <br>
-      <section class="content">        
+      <section class="content">
           <div class="container">
             <h1 id="custom_header">DISCOVER STUNNING GALLERY FROM THE WORLDS BEST CREATORS</h1>
-              <div class="row">              
+              <div class="row">
                   <div class="grid_12">
                       <div class="gallery">
                           <div class="row">
@@ -283,7 +287,7 @@ $url = str_replace("login_page.php","",$url);
                                 }else{
                                     //save user data
                                     $signUpdata = array();
-                                    
+
                                     while($row = $query_results->fetch_assoc()):
                                         file_put_contents("./postResults.txt",print_r($row,true));
 
@@ -306,14 +310,14 @@ $url = str_replace("login_page.php","",$url);
                                           <div class="">
                                               <div class="" aria-disabled="false" role="button" tabindex="0">
                                                   <span class="_2dbep " role="link" style="width: 52px; height: 52px;">
-                                                          <img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;" 
+                                                          <img alt="profile image" class="" style="padding-top: 10px; padding-left: 10px; width: 52px; height: 52px; border-radius: 30px;"
                                                           data-testid="user-avatar" draggable="false" src="<?php echo $_SESSION["profile_img"];?>">
                                                       </span>&nbsp;
                                                   <span class="">
                                                           <a class="photog_name" href="./profile_page.php" ><?php echo $_SESSION["name"].' '.$_SESSION["surname"]; ?></a>
                                                           <br><div class="photo_type"><strong><?php echo $_SESSION["content_type"]; ?></strong></div>
                                                       </span>
-                                            <a href="#">Book Now</a>
+                                            <a href="/book_now.php">Book Now</a>
 
                                               </div>
                                           </div>
@@ -330,10 +334,10 @@ $url = str_replace("login_page.php","",$url);
                                       </div>
                                   </article>
                                     <?php endwhile;
-                                    
+
                                 }
                                   ?>
-                                  
+
                           </div>
                       </div>
                   </div>

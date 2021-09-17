@@ -133,6 +133,11 @@ $url = str_replace("login_page.php","",$url);
 .item{
     margin-left: 40px;
 }
+.search_input{
+	border-radius: 15px;
+	width: 350px;
+}
+
 .item
 input[type=text], input[type=password] {
   width: 100%;
@@ -209,10 +214,10 @@ button {
                   <div class="grid_12">
                     <h1 id="logo" (click)="nav('')">Blue Novelty</h1>
                       <div class="search">
-                      <form class="example" action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
+												<form action="/action_page.php">
+												<input class="search_input" type="text" placeholder="Search.." name="search">
+												<button type="submit"><i class="fa fa-search"></i></button>
+												</form>
                         </div>
 
                       <div class="menu_block">
