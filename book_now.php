@@ -303,13 +303,13 @@ select {
 	</section>
 
 
-            <form method="post" action="./sign_up.php" id="signup_form">
+            <form method="post" action="./booking.php" id="signup_form">
             <ul style="padding:10px;">
 							<center><h1>Book for an Event</h1></center>
 
-                <li class="item"><label class="signin_label" style="padding-right: 250px;">Name&nbsp;:&nbsp;</label>
+                <li class="item"><label class="signin_label" style="padding-right: 250px;">First Name&nbsp;:&nbsp;</label>
                 <input class="form-control" type="text" name="name"></li>
-                <li class="item"><label class="signin_label" style="padding-right: 211px;">Surname&nbsp;:&nbsp;</label>
+                <li class="item"><label class="signin_label" style="padding-right: 211px;">Last Name&nbsp;:&nbsp;</label>
                 <input class="form-control" type="text" name="surname"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 137px;">Company Name&nbsp;:&nbsp;</label>
                 <input class="form-control" type="text" name="company_name"></li>
@@ -318,7 +318,7 @@ select {
                     <input class="form-control" type="text" name="email"></li>
 										<!-- Container class contains the date field -->
 												<div class="form-group m-1">
-														<label class="font-weight-bold" for="dob">
+														<label class="font-weight-bold" for="event_type">
 															Date of your event
 														</label>
 
@@ -453,3 +453,39 @@ select {
   </footer>
 </body>
 </html>
+<?php
+$to = "ntimaneskl@gmail.com, katlego@mitconsulting.co.za";
+$subject = "Blue Novelty Booking";
+
+$message = "
+<html>
+<head>
+<title>Booking</title>
+</head>
+<body>
+<p>This email contains HTML Tags!</p>
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+</tr>
+<tr>
+<td>John</td>
+<td>Doe</td>
+</tr>
+</table>
+</body>
+</html>
+";
+
+// Always set content-type when sending HTML email
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+$headers .= 'From: <webmaster@bluenovelty.co.za>' . "\r\n";
+$headers .= 'Cc: ntimaneskl@gmail.com' . "\r\n";
+
+mail($to,$subject,$message,$headers);
+
+ ?>

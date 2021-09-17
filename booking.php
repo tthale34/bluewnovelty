@@ -16,21 +16,14 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
     $_SESSION["surname"] = $_POST["surname"];
     $_SESSION["company_name"] = $_POST["company_name"];
     $_SESSION["email"] = $_POST["email"];
-    $_SESSION["username"] = $_POST["email"];
-    $_SESSION["dob"] = $_POST["dob"];
-    $_SESSION["gender"] = $_POST["gender"];
+
     $_SESSION["content_type"] = $_POST["content_type"];
-    $_SESSION["which_photography"] = $_POST["which_photography"];
-    $_SESSION["which_photography1"] = $_POST["which_photography1"];
-    $_SESSION["profile_img"] = $path_filename_ext;
-    $_SESSION["password"] = $_POST["password"];
-    $_SESSION["user_type"] = $_POST["user_type"];
+
     //insert new user
-    $sql = "INSERT INTO `users`";
-    $sql .= "(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)";
+    $sql = "INSERT INTO `bookings`";
+    $sql .= "(`name`, `last_name`, `company_name`, `email_address`, `event_date`, `profile_img`)";
     $sql .= "VALUES ('".$_POST["name"]."', '".$_POST["surname"]."', '".$_POST["company_name"]."', '";
-    $sql .= $_POST["email"]."', '".$_POST["dob"]."', '".$_POST["gender"]."', '".$_POST["content_type"]."', '";
-    $sql .= $_POST["which_photography"]."', '".$_POST["which_photography1"]."', '".$path_filename_ext."', '".$_POST["password"]."', '".$_POST["user_type"]."');commit;";
+    $sql .= $_POST["content_type"]."');commit;";
 
     $connection->query($sql);
     //get uer id
@@ -65,14 +58,14 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
     echo 'in else.';
 }
 
-//email send
+//email
 $to = "ntimaneskl@gmail.com, katlego@mitconsulting.co.za";
-$subject = "Blue Novelty New Sign Up";
+$subject = "Blue Novelty Booking";
 
 $message = "
 <html>
 <head>
-<title>New Sign up</title>
+<title>Booking</title>
 </head>
 <body>
 <p>This email contains HTML Tags!</p>
@@ -100,6 +93,6 @@ $headers .= 'Cc: ntimaneskl@gmail.com' . "\r\n";
 
 mail($to,$subject,$message,$headers);
 
-echo "Thank you for Signing up! We will contact you shortly!";
+
 
 ?>

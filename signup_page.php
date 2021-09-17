@@ -259,10 +259,11 @@ select {
     <div class="signup_info">
         <div <?php if(isset($_GET['invalidLogin'])){echo 'style="display:inline;"';}else { echo 'style="display:none;"';}?>><label class="invalidUser">Invalid User credentails entered.</label></div>
         <div>
+					<center><h1>Sign Up as A Creative</h1></center>
 
             <form method="post" action="./sign_up.php" id="signup_form">
+
             <ul style="padding:10px;">
-						<center><h1>Sign Up as A Creative</h1></center>
 
                 <li class="item"><label class="signin_label" style="padding-right: 250px;">Name&nbsp;:&nbsp;</label>
                 <input class="form-control" type="text" name="name"></li>
@@ -273,6 +274,12 @@ select {
                 <li class="item">
                     <label class="signin_label" style="padding-right: 250px;">Email&nbsp;:&nbsp;</label>
                     <input class="form-control" type="text" name="email"></li>
+										<li class="item"><label class="signin_label" style="padding-right: 250px;">Facebook Handle&nbsp;:&nbsp;</label>
+		                <input class="form-control" type="text" name="facebook_profile"></li>
+										<li class="item"><label class="signin_label" style="padding-right: 250px;">Instagram Handle&nbsp;:&nbsp;</label>
+										<input class="form-control" type="text" name="ig_profile"></li>
+										<li class="item"><label class="signin_label" style="padding-right: 250px;">YouTube Channel Handle&nbsp;:&nbsp;</label>
+										<input class="form-control" type="text" name="youtube_profile"></li>
                 <li class="item">
                     <label class="signin_label" style="padding-right: 200px;">Password&nbsp;:&nbsp;</label>
                     <input class="form-control" type="password" name="password" id="password"></li>
@@ -345,21 +352,15 @@ select {
                                 <option>Wildlife</option>
                                 <option>Wedding</option>
                             </select></li>
-                            <li class="item">
-                                <label class="signin_label" style="padding-right: 200px;">User&nbsp;Type&nbsp;:&nbsp;</label>
-                                <select name="user_type">
-                                    <option></option>
-                                    <option>Photographer</option>
-                                    <option>User</option>
-                                </select>
-                            </li>
+
                             <li class="item">
                                 <label class="signin_label" style="padding-right: 160px;">Profile&nbsp;Image&nbsp;:&nbsp;</label>
                                 <input class="form-control" type="file" name="profile_img">
                             </li>
+														<input type="submit" class="btn bt__2 sign_btn" value="Submit">
+														<input type="clear" class="btn bt__2 sign_btn" value="Clear">
             </ul>
-            <input type="submit" class="btn bt__2 sign_btn" value="Submit">
-            <input type="clear" class="btn bt__2 sign_btn" value="Clear">
+
             </form>
         </div>
     </div>

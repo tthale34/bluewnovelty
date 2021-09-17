@@ -317,7 +317,7 @@ $url = str_replace("login_page.php","",$url);
                                                           <a class="photog_name" href="./profile_page.php" ><?php echo $_SESSION["name"].' '.$_SESSION["surname"]; ?></a>
                                                           <br><div class="photo_type"><strong><?php echo $_SESSION["content_type"]; ?></strong></div>
                                                       </span>
-                                            <a href="/book_now.php">Book Now</a>
+                                            <a href="./book_now.php">Book Now</a>
 
                                               </div>
                                           </div>
