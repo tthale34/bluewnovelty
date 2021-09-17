@@ -25,6 +25,8 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ){
     $_SESSION["profile_img"] = $path_filename_ext;
     $_SESSION["password"] = $_POST["password"];
     $_SESSION["user_type"] = $_POST["user_type"];
+    $_SESSION["city"] = $_POST["city"];
+
     //insert new user
     $sql = "INSERT INTO `users`";
     $sql .= "(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)";

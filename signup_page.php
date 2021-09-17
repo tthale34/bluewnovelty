@@ -357,6 +357,10 @@ select {
                                 <label class="signin_label" style="padding-right: 160px;">Profile&nbsp;Image&nbsp;:&nbsp;</label>
                                 <input class="form-control" type="file" name="profile_img">
                             </li>
+														<li class="item">
+																<label class="signin_label" style="padding-right: 160px;">City&nbsp;Image&nbsp;:&nbsp;</label>
+																<input class="form-control" type="file" name="city">
+														</li>
 														<input type="submit" class="btn bt__2 sign_btn" value="Submit">
 														<input type="clear" class="btn bt__2 sign_btn" value="Clear">
             </ul>
