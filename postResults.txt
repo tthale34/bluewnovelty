@@ -1,16 +1,83 @@
-Array
+get id :11Array
 (
-    [ind] => 10
-    [name] => Elijah
-    [surname] => Ilunga
-    [company_name] => Elijah Ilunga
-    [email] => Chevalcheezy@gmail.com
-    [dob] => 12/06/1999
+    [name] => test
+    [surname] => test
+    [company_name] => test
+    [email] => test
+    [facebook_profile] => test
+    [ig_profile] => test
+    [youtube_profile] => test
+    [password] => 
+    [re_password] => 
+    [dob] => test
     [gender] => Male
     [content_type] => Photography
-    [which_photography] => Lifestyle
-    [which_photography1] => Lifestyle
-    [profile_img] => uploads/10/Elijah_main.jpeg
-    [user_type] => Photographer
-    [password] => test
+    [which_photography] => Advertisement
+    [which_photography1] => Aerial (Drone)
+    [profile_img] => 40th hairstyle.png
+    [city] => 
 )
+get id :11Array
+(
+)
+get id :11get id :11Array
+(
+    [profile_img] => Array
+        (
+            [name] => 40th hairstyle.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpEFA5.tmp
+            [error] => 0
+            [size] => 1212672
+        )
+
+)
+get id :11Array
+(
+    [profile_img] => Array
+        (
+            [name] => 40th hairstyle.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php6FAA.tmp
+            [error] => 0
+            [size] => 1212672
+        )
+
+)
+get id :11profile imge saved to :./uploads/11/40th hairstyle.pnginsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('test', 'test', 'test', 'test', 'test', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/11/40th hairstyle.png', 'qwe', '');commit;Array
+(
+    [profile_img] => Array
+        (
+            [name] => couch - Copy.PNG
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php62B.tmp
+            [error] => 0
+            [size] => 690438
+        )
+
+)
+get id :25profile imge saved to :./uploads/25/couch - Copy.PNGinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('tebogo', 'thale', 'blue', 'tthale34@gmail.com', 'qwe', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/25/couch - Copy.PNG', 'qwe', '');commit;Array
+(
+    [profile_img] => Array
+        (
+            [name] => Azure.PNG
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php71EF.tmp
+            [error] => 0
+            [size] => 43917
+        )
+
+)
+get id :26profile imge saved to :./uploads/26/Azure.PNGError: INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('zcxx', 'zxczxc', 'zxczxc', 'tthale@gmail.com', 'zxc', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/26/Azure.PNG', 'zxc', '');commit;<br>You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'commit' at line 1insert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('zcxx', 'zxczxc', 'zxczxc', 'tthale@gmail.com', 'zxc', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/26/Azure.PNG', 'zxc', '');commit;Array
+(
+    [profile_img] => Array
+        (
+            [name] => 40th hairstyle.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php166E.tmp
+            [error] => 0
+            [size] => 1212672
+        )
+
+)
+get id :26profile imge saved to :./uploads/26/40th hairstyle.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('cvb', 'cvb', 'cvb', 'cvb@gmail.com', 'cvb', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/26/40th hairstyle.png', 'cvb', '')

@@ -125,6 +125,11 @@ $url = str_replace("signup_page.php","",$url);
     padding-bottom: 10px;
     font-size: xx-large;
 }
+#signup_form{
+	width: 50%;
+	margin-left : 25%
+
+}
 .photog_name{
   padding-top: 50px;
   color: white;
@@ -133,9 +138,8 @@ $url = str_replace("signup_page.php","",$url);
   background: #fff;
 }
 .signin_label{
-    font-family: 'Bahnschrift', Courier, monospace;
-    font-weight: bolder;
-    font-size: 180%;
+    font-family: 'Helvetica';
+    font-size: 20px;
 
 }
 .signup_info{
@@ -176,6 +180,11 @@ select {
   border: none;
 
 }
+.search_input{
+	border-radius: 15px;
+	width: 350px;
+}
+
 .sign_btn:hover{
     color: #1a3fe2;
 }
@@ -214,40 +223,48 @@ select {
 <!--==============================header=================================-->
 <header>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <div id="stuck_container">
-          <div class="container">
-              <div class="row">
-                  <div class="grid_12">
-                    <h1 id="logo" (click)="nav('')">Blue Novelty</h1>
-                      <div class="search">
-                      <form class="example" action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                        </div>
+		<div id="stuck_container">
+				<div class="container">
+						<div class="row">
+								<div class="grid_12">
+									<h1 id="logo">Blue Novelty</h1>
+											<div class="" style="margin-left:40%;position: absolute;top: 30px;left:0;">
+													<form action="/action_page.php">
+													<input class="search_input" type="text" placeholder="Search.." name="search">
+													<button type="submit"><i class="fa fa-search"></i></button>
+													</form>
+											</div>
+										<div class="">
+												<nav class="" style="float:right;">
+														<ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
+																<!--<li><a class="btn btn-primary" (click)="nav('login')">LOGIN</a></li>
+																<li><a class="btn btn-primary" (click)="nav('sign-up')">SIGN UP</a></li>
+																<li><a (click)="nav('sign-up')">PHOTOGRAPHERS</a></li>
+																<li><a  (click)="nav('sign-up')">HOW TO REGISTER</a></li>-->
+																<li><a href="./login_page.php">LOGIN</a></li>
+																<li><a href="./signup_page.php">SIGN UP</a></li>
 
-                      <div class="menu_block">
-                          <nav class="horizontal-nav full-width horizontalNav-notprocessed">
-                            <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
-                                  <li><a href="./login_page.php">LOGIN</a></li>
-                                  <li><a href="./signup_page.php">SIGN UP</a></li>
-                              </ul>
-                              <ul class="sf-menu" <?php if(!isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
-                                <li><a (click)="logout()">LOGOUT </a></li>
-                          </nav>
-                          <div class="clear"></div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+														</ul>
+														<ul class="sf-menu" <?php if(!isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
+															<li><a href="./logout.php">LOGOUT </a></li>
+													</ul>
+												</nav>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
   </header>
   <div class="main"><br>
     <div class="signup_info">
         <div <?php if(isset($_GET['invalidLogin'])){echo 'style="display:inline;"';}else { echo 'style="display:none;"';}?>><label class="invalidUser">Invalid User credentails entered.</label></div>
         <div>
-            <form method="post" action="./sign_up.php">
+					<center><h1>Sign Up as A Creative</h1></center>
+
+            <form method="post" action="./sign_up.php" id="signup_form" enctype= "multipart/form-data">
+
             <ul style="padding:10px;">
+
                 <li class="item"><label class="signin_label" style="padding-right: 250px;">Name&nbsp;:&nbsp;</label>
                 <input class="form-control" type="text" name="name"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 211px;">Surname&nbsp;:&nbsp;</label>
@@ -257,6 +274,12 @@ select {
                 <li class="item">
                     <label class="signin_label" style="padding-right: 250px;">Email&nbsp;:&nbsp;</label>
                     <input class="form-control" type="text" name="email"></li>
+										<li class="item"><label class="signin_label" style="padding-right: 250px;">Facebook Handle&nbsp;:&nbsp;</label>
+		                <input class="form-control" type="text" name="facebook_profile"></li>
+										<li class="item"><label class="signin_label" style="padding-right: 250px;">Instagram Handle&nbsp;:&nbsp;</label>
+										<input class="form-control" type="text" name="ig_profile"></li>
+										<li class="item"><label class="signin_label" style="padding-right: 250px;">YouTube Channel Handle&nbsp;:&nbsp;</label>
+										<input class="form-control" type="text" name="youtube_profile"></li>
                 <li class="item">
                     <label class="signin_label" style="padding-right: 200px;">Password&nbsp;:&nbsp;</label>
                     <input class="form-control" type="password" name="password" id="password"></li>
@@ -329,21 +352,19 @@ select {
                                 <option>Wildlife</option>
                                 <option>Wedding</option>
                             </select></li>
-                            <li class="item">
-                                <label class="signin_label" style="padding-right: 200px;">User&nbsp;Type&nbsp;:&nbsp;</label>
-                                <select name="user_type">
-                                    <option></option>
-                                    <option>Photographer</option>
-                                    <option>User</option>
-                                </select>
-                            </li>
+
                             <li class="item">
                                 <label class="signin_label" style="padding-right: 160px;">Profile&nbsp;Image&nbsp;:&nbsp;</label>
                                 <input class="form-control" type="file" name="profile_img">
                             </li>
+                            <!-- <li class="item">
+                                    <label class="signin_label" style="padding-right: 160px;">City&nbsp;Image&nbsp;:&nbsp;</label>
+                                    <input class="form-control" type="file" name="city">
+                            </li> -->
+                            <input type="submit" class="btn bt__2 sign_btn" value="Submit">
+                            <input type="clear" class="btn bt__2 sign_btn" value="Clear">
             </ul>
-            <input type="submit" class="btn bt__2 sign_btn" value="Submit">
-            <input type="clear" class="btn bt__2 sign_btn" value="Clear">
+
             </form>
         </div>
     </div>

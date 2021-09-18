@@ -122,6 +122,10 @@ $url = str_replace("login_page.php","",$url);
 				.tutorial_holder2 {
 						display: inline-block;
 				}
+				.search_input{
+					border-radius: 15px;
+					width: 350px;
+				}
 
 				#logo {
 						font-family: 'Bahnschrift', Courier, monospace;
@@ -171,11 +175,11 @@ $url = str_replace("login_page.php","",$url);
                     <h1 id="logo">Blue Novelty</h1>
                         <div class="" style="margin-left:40%;position: absolute;top: 30px;left:0;">
                             <form action="/action_page.php">
-                            <input type="text" placeholder="Search.." name="search">
+                            <input class="search_input" type="text" placeholder="Search.." name="search">
                             <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
-                      <div class="">                        
+                      <div class="">
                           <nav class="" style="float:right;">
                               <ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
                                   <!--<li><a class="btn btn-primary" (click)="nav('login')">LOGIN</a></li>
@@ -197,96 +201,66 @@ $url = str_replace("login_page.php","",$url);
       </div>
 
 			<div class="topnav">
-  
+
 </div>
   </header>
   <div class="main">
       <!--=====================Content======================-->
       <?php include('./slider_img.php');?>
-      
+
 <!-- <center> -->
 <div class="gallery_main">
+<?php
+    $connection = new mysqli('localhost', 'root', '', 'bluenovelty');
+    $results = array(
+        "Status" => false,
+        "Message" => "No Action Taken"
+    );
+    if ($connection->error) {
+        header('Location: https://'.$_SERVER['SERVER_NAME'].'/errors.php?invalidLogin=true?&error='.$connection->error);
+    }
+    $sql = "SELECT * FROM `adverts` limit 4;";
+    $query_results = $connection->query($sql);
+    if($query_results->num_rows === 0):
+        header('Location: http://'.$_SERVER['SERVER_NAME'].'/error.php?invalidLogin=true');
+    else:     
+        while($row = $query_results->fetch_assoc()):    
+    ?>
 	<div class="gallery2">
         <div class="ad_container">
-        <a target="_blank" href="./images/ad1.jpg" class="ad_img">
-            <img src="./images/photographer-selecting-photos-RZPRBXK.jpg" alt="Cinque Terre">
-        </a>
-        <!-- <div style="display:inline-block; top:20px">
-            <a (click)="nav('profile')">View Profile</a> |
-            <a (click)="nav('profile')">Book Now</a>
-        </div> -->
-            <a style="cursor:pointer;" class="ad_info">Weddings Photography</a>
-            </div>
-    </div>
-
-    <div class="gallery2">
-        <div class="ad_container">
-            <a target="_blank" href="./images/ad2.jpg" class="ad_img">
-                <img src="./images/page4_img1.jpg" alt="Forest">
-            </a>
-            <!-- <div class="desc">
-                <a (click)="nav('profile')">View Profile</a> |
-                <a  (click)="nav('profile')">Book Now</a>
-            </div> -->
-            <a style="cursor:pointer;" class="ad_info">Portriat Photography</a>
+            <a target="_blank" href="<?php echo $row["location"];?>" class="ad_img">
+            <img src="<?php echo $row["location"];?>" alt="Cinque Terre"></a>
+            <a style="cursor:pointer;" class="ad_info"><?php echo $row["name"];?></a>
         </div>
     </div>
-
-    <div class="gallery2">
-        <div class="ad_container">
-            <a target="_blank" href="./images/ad3.jpg" class="ad_img">
-                <img src="./images/professional-female.jpg" alt="Northern Lights">
-            </a>
-            <a style="cursor:pointer;" class="ad_info">Event Photography</a>
-        </div>
-    </div>
-
-    <div class="gallery2">
-        <div class="ad_container">
-            <a target="_blank" href="./images/ad4.jpg" class="ad_img">
-                <img src="./images/casourel3.jpg" alt="Mountains">
-            </a>
-            <!-- <div class="desc">
-                <a (click)="nav('profile')">View Profile</a> |
-                <a (click)="nav('profile')">Book Now</a>
-            </div> -->
-            <a style="cursor:pointer;" class="ad_info">Fashion Photography</a>
-        </div>
-    </div>
+<?php
+        endwhile;
+    endif;
+?>
     <a href="#" class="ws_next" style="position:absolute;top:10%;"></a>
     <a href="#" class="ws_pre"></a>
 </div>
 <!-- </center> -->
   <br>
     <br>
-      <section class="content">        
+      <section class="content">
           <div class="container">
             <h1 id="custom_header">DISCOVER STUNNING GALLERY FROM THE WORLDS BEST CREATORS</h1>
-              <div class="row">              
+              <div class="row">
                   <div class="grid_12">
                       <div class="gallery">
                           <div class="row">
                               <div class="grid_4">
-                                  <?php
-                                  $connection = new mysqli('localhost', 'root', '', 'bluenovelty');
-                                  $results = array(
-                                      "Status" => false,
-                                      "Message" => "No Action Taken"
-                                  );
-                                  if ($connection->error) {
-                                      header('Location: https://'.$_SERVER['SERVER_NAME'].'/errors.php?invalidLogin=true?&error='.$connection->error);
-                                  }
-                                  $sql = "SELECT * FROM `users` WHERE email in ('Chevalcheezy@gmail.com','kelvinkelvinvanwyk@gmail.com');";
+                              <?php
+                                $sql = "SELECT * FROM `users` WHERE email in ('Chevalcheezy@gmail.com','kelvinkelvinvanwyk@gmail.com');";
                                 $query_results = $connection->query($sql);
-                                if($query_results->num_rows === 0){
+                                if($query_results->num_rows === 0):
                                     header('Location: http://'.$_SERVER['SERVER_NAME'].'/error.php?invalidLogin=true');
-                                }else{
+                                else:
                                     //save user data
-                                    $signUpdata = array();
-                                    
+                                    // $signUpdata = array();                                    
                                     while($row = $query_results->fetch_assoc()):
-                                        file_put_contents("./postResults.txt",print_r($row,true));
-
+                                        // file_put_contents("./postResults.txt",print_r($row,true));
                                         $_SESSION["name"] = $row["name"];
                                         $_SESSION["ind"] = $row["ind"];
                                         $_SESSION["surname"] = $row["surname"];
@@ -329,11 +303,10 @@ $url = str_replace("login_page.php","",$url);
                                           </div>
                                       </div>
                                   </article>
-                                    <?php endwhile;
-                                    
-                                }
+                                    <?php endwhile;                                    
+                                endif;
                                   ?>
-                                  
+
                           </div>
                       </div>
                   </div>

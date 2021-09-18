@@ -1,0 +1,1 @@
+INSERT INTO `users` (`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `password`, `user_type`) VALUES ('aaaa', 'qqqqqq', 'qqqqqqqqqq', 'qqqqqqqqqq', '', 'Male', 'Photography', 'Studio', 'Aerial (Drone)','qqqq', 'Photographer');commit;
