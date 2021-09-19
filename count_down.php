@@ -126,7 +126,7 @@ $url = str_replace("signup_page.php","",$url);
     font-weight:bold;
     color: #fff;
     position: absolute;
-    top:20px;
+    top:-20px;
     margin-left: 40%;
     z-index: 12;
 }
@@ -195,24 +195,34 @@ select {
 }
 #demo{
     position: absolute;
-    top:120px;
+    top:50px;
     margin-left: 38%;
     font-size:30px;
     z-index:11;
     font-size:40px;
     font-weight:bold;
-    color:#fff;
+    color:#1a3fe2;
 }
 #Sign_up{
     position: absolute;
     top:450px;
-    left:400px;
+    left: 30%;
     font-size:60px;
     z-index:10;
     color:#fff;
 }
-#Sign_up:hover{
+#Sign_up button{
+    font-size:40px;
+    min-height: 40px;
+    border-radius:40px;
+    background-color:#1a3fe2;
+    opacity: 0.5;
+    color:#fff;
+    padding:30px;
+}
+#Sign_up button:hover{
     color:#000;
+    opacity: 0.7;
 }
 @media only screen and (width: 580px) {
     .home_image{
@@ -233,6 +243,16 @@ select {
   @media only screen and (width: 768px){
     #Sign_up{
         left:200px;
+    }
+  }
+  @media only screen and (width: 330px){
+    #demo{
+        top:60px;
+    }
+  }
+  @media only screen and (width: 320px){
+    #demo{
+        top:90px;
     }
   }
 </style>
@@ -306,8 +326,8 @@ select {
     }
   }, 1000);
   </script>
-  <center><button><a href="./signup_page.php" id="Sign_up">
-  Are you a creative?<br>SIGN UP</a></button></center>
+  <center><a href="./signup_page.php" id="Sign_up">
+  Are you a creative?<br><button>SIGN UP</button></a></center>
   <br><br>
   <?php include('./slider_img_count.php');?>
   </body>

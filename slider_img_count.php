@@ -45,8 +45,8 @@
         <div class="inner full-height">
             <!-- BEGIN SLIDER -->
             <div class="swiper-container" id="hero">
-                <div class="swiper-wrapper">
-                                            <!-- BEGIN SLIDE -->
+                <div class="swiper-wrapper">                                            
+                        <!-- BEGIN SLIDE -->
                         <div class="swiper-slide fit">
                             <!-- BEGIN IMAGE PARRALAX -->
                             <div class="slider-wrapper">
