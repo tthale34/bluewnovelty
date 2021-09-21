@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="0SKu3IuusknbRy30jGqTW29VqExVxeOsiKlXFFig"/>
 
     <title></title>
-<!-- 
+<!--
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="apple-touch-icon" href="https://trianstudios.com/assets/images/logos/logo_light.svg"/>
     <link rel="apple-touch-icon" sizes="76x76" href="https://trianstudios.com/assets/images/logos/logo_light.svg"/>
@@ -18,7 +18,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
     <meta content="" name="description" />
     <meta content="" name="author" /> -->
-    <!-- BEGIN PLUGINS -->    
+    <!-- BEGIN PLUGINS -->
     <link href="https://trianstudios.com/assets/css/custom.css" rel="stylesheet" type="text/css" />
     <link href="https://trianstudios.com/assets/css/haswell.css?6138e73f224675.29721775" rel="stylesheet" type="text/css" />
     <link href="https://trianstudios.com/assets/css/icons-fonts.css?6138e73f224744.62078834" rel="stylesheet" type="text/css" />
@@ -45,7 +45,7 @@
         <div class="inner full-height">
             <!-- BEGIN SLIDER -->
             <div class="swiper-container" id="hero">
-                <div class="swiper-wrapper">                                            
+                <div class="swiper-wrapper">
                         <!-- BEGIN SLIDE -->
                         <div class="swiper-slide fit">
                             <!-- BEGIN IMAGE PARRALAX -->
@@ -66,7 +66,7 @@
                                                     <!-- <h1 class="light sm-text-center" data-swiper-parallax="-15%" style="color: #ffffff">
                                                     Take your freelance career in content creation to the next level.</h1> -->
                                                     <!-- <h4 class="sm-text-center" style="color: #ffffff">Next Level.</h4>
-                                                    <h5 class="block-title text-white sm-text-center">Sign Up</h5>                                                    
+                                                    <h5 class="block-title text-white sm-text-center">Sign Up</h5>
                                                     <p class="fs-12 font-arial hint-text sm-text-center" style="color: #ffffff">Additional Info</p> -->
                                                 </div>
                                             </div>
@@ -97,7 +97,7 @@
                                                     <!-- <h1 class="light sm-text-center" data-swiper-parallax="-15%" style="color: #ffffff">
                                                     Take your freelance career in content creation to the next level.</h1> -->
                                                     <!-- <h4 class="sm-text-center" style="color: #ffffff">Next Level.</h4>
-                                                    <h5 class="block-title text-white sm-text-center">Sign Up</h5>                                                    
+                                                    <h5 class="block-title text-white sm-text-center">Sign Up</h5>
                                                     <p class="fs-12 font-arial hint-text sm-text-center" style="color: #ffffff">Additional Info</p> -->
                                                 </div>
                                             </div>
@@ -108,69 +108,10 @@
                             <!-- END CONTENT -->
                         </div>
                         <!-- END SLIDE -->
-                        <!-- BEGIN SLIDE -->
-                        <div class="swiper-slide fit">
-                            <!-- BEGIN IMAGE PARRALAX -->
-                            <div class="slider-wrapper">
-                                <div class="background-wrapper" data-swiper-parallax="30%">
-                                    <!-- YOUR BACKGROUND IMAGE HERE, YOU CAN ALSO USE IMG with the same classes -->
-                                    <div class="background" data-pages-bg-image="./images/count_down_slider/3rd_Slide.jpg" style="background-color: #af84f1;"></div>
-                                </div>
-                            </div>
-                            <!-- END IMAGE PARRALAX -->
-                            <!-- BEGIN CONTENT -->
-                            <div class="content-layer">
-                                <div class="inner full-height">
-                                    <div class="container-xs-height full-height">
-                                        <div class="col-xs-height col-middle text-left">
-                                            <div class="container">
-                                                <div class="col-md-6 no-padding col-xs-10 col-xs-offset-1">
-                                                    <!-- <h1 class="light sm-text-center" data-swiper-parallax="-15%" style="color: #ffffff">
-                                                    Take your freelance career in content creation to the next level.</h1> -->
-                                                    <!-- <h4 class="sm-text-center" style="color: #ffffff">Next Level.</h4>
-                                                    <h5 class="block-title text-white sm-text-center">Sign Up</h5>                                                    
-                                                    <p class="fs-12 font-arial hint-text sm-text-center" style="color: #ffffff">Additional Info</p> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END CONTENT -->
-                        </div>
-                        <!-- END SLIDE -->
+                        
                                             <!-- BEGIN SLIDE -->
-                        <div class="swiper-slide fit">
-                            <!-- BEGIN IMAGE PARRALAX -->
-                            <div class="slider-wrapper">
-                                <div class="background-wrapper" data-swiper-parallax="30%">
-                                    <!-- YOUR BACKGROUND IMAGE HERE, YOU CAN ALSO USE IMG with the same classes -->
-                                    <div class="background" data-pages-bg-image="./images/count_down_slider/4th_Slide.jpg" style="background-color: #e2b48b"></div>
-                                </div>
-                            </div>
-                            <!-- END IMAGE PARRALAX -->
-                            <!-- BEGIN CONTENT -->
-                            <div class="content-layer">
-                                <div class="inner full-height">
-                                    <div class="container-xs-height full-height">
-                                        <div class="col-xs-height col-middle text-left">
-                                            <div class="container">
-                                                <div class="col-md-6 no-padding col-xs-10 col-xs-offset-1">
-                                                    <!-- <h1 class="light sm-text-center" data-swiper-parallax="-15%" style="color: #000000">
-                                                    “Book a Photographer or freelance career in content creating Videographer Now.”.</h1> -->
-                                                    <!-- <h4 class="sm-text-center" style="color: #000000">Bookings made easy.</h4>
-                                                    <h5 class="block-title text-white sm-text-center">Book</h5>
-                                                    <p class="fs-12 font-arial hint-text sm-text-center" style="color: #000000">Additional Info.</p> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END CONTENT -->
-                        </div>
-                        <!-- END SLIDE -->
-                                            
+
+
                 </div>
                 <!-- BEGIN ANIMATED MOUSE -->
                 <!-- Add Navigation -->

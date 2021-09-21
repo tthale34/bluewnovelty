@@ -118,12 +118,16 @@ $url = str_replace("signup_page.php","",$url);
 }
 
 #logo {
-    font-family: 'Bahnschrift', Courier, monospace;
-    cursor: pointer;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: xx-large;
+	font-family: 'Bahnschrift', Courier, monospace;
+	cursor: pointer;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-weight:bold;
+	color: #fff;
+	top:-14px;
+	margin-left: 40%;
+	z-index: 12;
+	font-size: 52px;
 }
 #signup_form{
 	width: 50%;
@@ -160,6 +164,8 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+	font-size: 18px !important
+
 }
 .item
 select {
@@ -167,17 +173,20 @@ select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border-radius: 15px !important;
   box-sizing: border-box;
+	font-size: 18px !important
 }
 .sign_btn{
 	width: 30%;
     cursor: pointer;
-  background-color: #04AA6D;
+		background-color:#3770DE;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
+	font-size: 30px !important
+
+
 
 }
 .search_input{
@@ -187,6 +196,9 @@ select {
 
 .sign_btn:hover{
     color: #1a3fe2;
+}
+h1{
+	font-size: 2em;
 }
 @media only screen and (width: 580px) {
     .home_image{
@@ -228,38 +240,19 @@ select {
 						<div class="row">
 								<div class="grid_12">
 									<h1 id="logo">Blue Novelty</h1>
-											<div class="" style="margin-left:40%;position: absolute;top: 30px;left:0;">
-													<form action="/action_page.php">
-													<input class="search_input" type="text" placeholder="Search.." name="search">
-													<button type="submit"><i class="fa fa-search"></i></button>
-													</form>
-											</div>
-										<div class="">
-												<nav class="" style="float:right;">
-														<ul class="sf-menu" <?php if(isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
-																<!--<li><a class="btn btn-primary" (click)="nav('login')">LOGIN</a></li>
-																<li><a class="btn btn-primary" (click)="nav('sign-up')">SIGN UP</a></li>
-																<li><a (click)="nav('sign-up')">PHOTOGRAPHERS</a></li>
-																<li><a  (click)="nav('sign-up')">HOW TO REGISTER</a></li>-->
-																<li><a href="./login_page.php">LOGIN</a></li>
-																<li><a href="./signup_page.php">SIGN UP</a></li>
 
-														</ul>
-														<ul class="sf-menu" <?php if(!isset($_SESSION['username'])){ echo 'style="display:none;"';}?>>
-															<li><a href="./logout.php">LOGOUT </a></li>
-													</ul>
-												</nav>
-										</div>
-								</div>
-						</div>
-				</div>
+
 		</div>
+
   </header>
+	<hr>
+
+	<center><h1>Sign Up as A Creative</h1></center>
+
   <div class="main"><br>
-    <div class="signup_info">
+  <!--  <div class="signup_info">
         <div <?php if(isset($_GET['invalidLogin'])){echo 'style="display:inline;"';}else { echo 'style="display:none;"';}?>><label class="invalidUser">Invalid User credentails entered.</label></div>
-        <div>
-					<center><h1>Sign Up as A Creative</h1></center>
+        <div>-->
 
             <form method="post" action="./sign_up.php" id="signup_form" enctype= "multipart/form-data">
 
@@ -289,7 +282,7 @@ select {
                 <li class="item" style="display:none;" id="pass_not_match">
                     <label class="" style="padding-right: 250px;color: red;">Passwords do not match</label>
                     </li>
-                <li class="item"><label class="signin_label" style="padding-right: 255px;">D.O.B&nbsp;:&nbsp;</label>
+                <li class="item"><label class="signin_label" style="padding-right: 255px;">Date of Birth&nbsp;:&nbsp;</label>
                 <input class="form-control" type="text" name="dob"></li>
                 <li class="item"><label class="signin_label" style="padding-right: 228px;">Gender&nbsp;:&nbsp;</label>
                 <select name="gender">
@@ -303,7 +296,7 @@ select {
                     <option>Photography</option>
                     <option>Videography</option>
                 </select></li>
-                <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
+                <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of Photography&nbsp;:&nbsp;</label>
                     <select name="which_photography">
                         <option></option>
                         <option>Advertisement</option>
@@ -326,7 +319,7 @@ select {
                         <option>Wildlife</option>
                         <option>Wedding</option>
                     </select></li>
-                        <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of photography&nbsp;:&nbsp;</label>
+                        <li class="item"><label class="signin_label" style="padding-right: 10px;">Which field of Videography&nbsp;:&nbsp;</label>
                         <select name="which_photography1">
                                 <option>Aerial (Drone)</option>
                                 <option>Time-Lapse</option>
@@ -352,7 +345,8 @@ select {
                                 <option>Wildlife</option>
                                 <option>Wedding</option>
                             </select></li>
-
+														<li class="item"><label class="signin_label" style="padding-right: 255px;">City&nbsp;:&nbsp;</label>
+														<input class="form-control" type="text" name="city"></li>
                             <li class="item">
                                 <label class="signin_label" style="padding-right: 160px;">Profile&nbsp;Image&nbsp;:&nbsp;</label>
                                 <input class="form-control" type="file" name="profile_img">
@@ -361,8 +355,14 @@ select {
                                     <label class="signin_label" style="padding-right: 160px;">City&nbsp;Image&nbsp;:&nbsp;</label>
                                     <input class="form-control" type="file" name="city">
                             </li> -->
-                            <input type="submit" class="btn bt__2 sign_btn" value="Submit">
-                            <input type="clear" class="btn bt__2 sign_btn" value="Clear">
+														<form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; }
+														else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy');
+														 return false; }">
+
+											<center>			 <input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the <a href="other/TERMS OF USE.pdf">Terms and Conditions</a> and Privacy Policy
+<br><br><input type="submit" class="sign_btn" value="Submit"></center><br>
+
+</form>
             </ul>
 
             </form>
@@ -392,7 +392,7 @@ select {
                                   </div>
                               </div>
                               <div class="grid_3">
-                                  <a href="#" class="btn bt__2" data-type="submit">Submit</a>
+                                  <a href="#" class="btn" data-type="submit">Submit</a>
                               </div>
                           </div>
                       </form>

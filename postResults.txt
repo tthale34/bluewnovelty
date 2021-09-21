@@ -80,4 +80,426 @@ get id :26profile imge saved to :./uploads/26/Azure.PNGError: INSERT INTO `users
         )
 
 )
-get id :26profile imge saved to :./uploads/26/40th hairstyle.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('cvb', 'cvb', 'cvb', 'cvb@gmail.com', 'cvb', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/26/40th hairstyle.png', 'cvb', '')
+get id :26profile imge saved to :./uploads/26/40th hairstyle.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('cvb', 'cvb', 'cvb', 'cvb@gmail.com', 'cvb', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/26/40th hairstyle.png', 'cvb', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => 96753341_1634661773354110_1447981076327694336_n.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php79F7.tmp
+            [error] => 0
+            [size] => 84035
+        )
+
+)
+get id :26profile imge saved to :./uploads/26/96753341_1634661773354110_1447981076327694336_n.jpgNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Katlego Ntimane', 'Ntimane', 'MIT', 'katlego@mitconsulting.co.za', '11-01-2222', 'Male', 'Photography', 'Food', 'Aerial (Drone)', './uploads/26/96753341_1634661773354110_1447981076327694336_n.jpg', '', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+get id :27Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2CC8.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :27profile imge saved to :./uploads/27/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('SKK', 'Ntimane', 'MIT', 'katlego@mitconsulting.co.za', '11-01-2222', 'Male', 'Photography', 'Food', 'Aerial (Drone)', './uploads/27/afm-logo-vector-1400x1385.png', '11111', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php5AB6.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :28profile imge saved to :./uploads/28/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('SKL', 'SK', 'MIT Sons', 'ntimaneskl@gmail.com', '11-01-2222', 'Male', 'Photography', 'Food', 'Aerial (Drone)', './uploads/28/afm-logo-vector-1400x1385.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => 32090033_436851133394433_2911739740787048448_n.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpA4C6.tmp
+            [error] => 0
+            [size] => 32896
+        )
+
+)
+get id :29profile imge saved to :./uploads/29/32090033_436851133394433_2911739740787048448_n.jpgNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Sello', 'Ntimz', 'Company', 'ntimaneskl@gmail.com1', '11-01-2021', 'Male', 'Photography', 'Food', 'Aerial (Drone)', './uploads/29/32090033_436851133394433_2911739740787048448_n.jpg', '1234567', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => 32090033_436851133394433_2911739740787048448_n.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpB630.tmp
+            [error] => 0
+            [size] => 32896
+        )
+
+)
+get id :30profile imge saved to :./uploads/30/32090033_436851133394433_2911739740787048448_n.jpgNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Luther', 'Sello', 'Company', 'ntimaneskl@gmail.com1', '11-01-1988', 'Male', 'Photography', 'Food', 'Aerial (Drone)', './uploads/30/32090033_436851133394433_2911739740787048448_n.jpg', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => 32090033_436851133394433_2911739740787048448_n.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php1E6.tmp
+            [error] => 0
+            [size] => 32896
+        )
+
+)
+get id :31profile imge saved to :./uploads/31/32090033_436851133394433_2911739740787048448_n.jpgNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('test', 'test', 'test', 'ntimaneskl@gmail.com', '11-01-1988', 'Male', 'Photography', 'Food', 'Aerial (Drone)', './uploads/31/32090033_436851133394433_2911739740787048448_n.jpg', '1234567', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => 32090033_436851133394433_2911739740787048448_n.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php2848.tmp
+            [error] => 0
+            [size] => 32896
+        )
+
+)
+get id :10profile imge saved to :./uploads/10/32090033_436851133394433_2911739740787048448_n.jpg
+Error: INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Lerato', 'Ntimane', 'Lee's Beauty', 'l.colertte@gmail.com', '11-01-1988', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/10/32090033_436851133394433_2911739740787048448_n.jpg', '123456', '')
+You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 's Beauty', 'l.colertte@gmail.com', '11-01-1988', 'Male', 'Photography', 'Adve...' at line 1insert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Lerato', 'Ntimane', 'Lee's Beauty', 'l.colertte@gmail.com', '11-01-1988', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/10/32090033_436851133394433_2911739740787048448_n.jpg', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => 32090033_436851133394433_2911739740787048448_n.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php13B9.tmp
+            [error] => 0
+            [size] => 32896
+        )
+
+)
+get id :10Array
+(
+    [profile_img] => Array
+        (
+            [name] => BackIcon.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpB1F4.tmp
+            [error] => 0
+            [size] => 3931
+        )
+
+)
+get id :10profile imge saved to :./uploads/10/BackIcon.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('motho', 'motho', 'motho', 'l.colertte@gmail.com', '11-09-1991', 'Male', 'Photography', 'Aerial', 'Aerial (Drone)', './uploads/10/BackIcon.png', '99999', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => BackIcon.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php9BFD.tmp
+            [error] => 0
+            [size] => 3931
+        )
+
+)
+get id :33profile imge saved to :./uploads/33/BackIcon.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('motho1', 'motho1', 'motho', 'l.colertte@gmail.com', '11-09-1991', 'Male', 'Photography', 'Aerial', 'Aerial (Drone)', './uploads/33/BackIcon.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => BackIcon.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php4E08.tmp
+            [error] => 0
+            [size] => 3931
+        )
+
+)
+get id :34profile imge saved to :./uploads/34/BackIcon.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('motho1', 'motho1', 'motho', 'l.colertte@gmail.com', '11-09-1991', 'Male', 'Photography', 'Aerial', 'Aerial (Drone)', './uploads/34/BackIcon.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => Arrows-Left-icon.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php97FA.tmp
+            [error] => 0
+            [size] => 727
+        )
+
+)
+get id :35profile imge saved to :./uploads/35/Arrows-Left-icon.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('TEST', 'TEST', 'TEST', 'l.colertte@gmail.com', '11-01-1988', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/35/Arrows-Left-icon.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => Arrows-Left-icon.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php8D0A.tmp
+            [error] => 0
+            [size] => 727
+        )
+
+)
+get id :36profile imge saved to :./uploads/36/Arrows-Left-icon.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('TEST', 'TEST', 'TEST', 'l.colertte@gmail.com', '11-01-1988', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/36/Arrows-Left-icon.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => Arrows-Left-icon.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php9690.tmp
+            [error] => 0
+            [size] => 727
+        )
+
+)
+get id :37profile imge saved to :./uploads/37/Arrows-Left-icon.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('TEST', 'TEST', 'TEST', 'l.colertte@gmail.com', '11-01-1988', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/37/Arrows-Left-icon.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => Arrows-Left-icon.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php4D4A.tmp
+            [error] => 0
+            [size] => 727
+        )
+
+)
+get id :38profile imge saved to :./uploads/38/Arrows-Left-icon.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('TEST', 'TEST', 'TEST', 'l.colertte@gmail.com', '11-01-1988', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/38/Arrows-Left-icon.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+get id :39Array
+(
+    [profile_img] => Array
+        (
+            [name] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+get id :39Array
+(
+    [profile_img] => Array
+        (
+            [name] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+get id :39Array
+(
+    [profile_img] => Array
+        (
+            [name] => 
+            [type] => 
+            [tmp_name] => 
+            [error] => 4
+            [size] => 0
+        )
+
+)
+get id :39Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php14B4.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :39profile imge saved to :./uploads/39/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Katlego Ntimane', 'Ntimane', 'MIT', 'ntimaneskl@gmail.com', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/39/afm-logo-vector-1400x1385.png', '', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php186F.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :40profile imge saved to :./uploads/40/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Katlego Ntimane', 'Ntimane', 'MIT', 'ntimaneskl@gmail.com', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/40/afm-logo-vector-1400x1385.png', '', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php22D0.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :41profile imge saved to :./uploads/41/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Katlego Ntimane', 'Ntimane', 'MIT', 'ntimaneskl@gmail.com', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/41/afm-logo-vector-1400x1385.png', '', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2F45.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :42profile imge saved to :./uploads/42/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Katlego Ntimane', 'Ntimane', 'MIT', 'ntimaneskl@gmail.com', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/42/afm-logo-vector-1400x1385.png', '', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php1DBF.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :43profile imge saved to :./uploads/43/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Katlego Ntimane', 'Ntimane', 'MIT', 'ntimaneskl@gmail.com', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/43/afm-logo-vector-1400x1385.png', '', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpCE73.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :44profile imge saved to :./uploads/44/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Katlego Ntimane', 'Ntimane', 'MIT', 'ntimaneskl@gmail.com', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/44/afm-logo-vector-1400x1385.png', '', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php1035.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :45profile imge saved to :./uploads/45/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Kevin', 'Straus', 'Shoot', 'katlego@mitconsulting.co.za', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/45/afm-logo-vector-1400x1385.png', '11111', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php27E6.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :46profile imge saved to :./uploads/46/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Thabo', 'Thibos', 'zoo', 'katlego@mitconsulting.co.za', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/46/afm-logo-vector-1400x1385.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php8469.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :47profile imge saved to :./uploads/47/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Thabo', 'Thibos', 'zoo', 'katlego@mitconsulting.co.za', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/47/afm-logo-vector-1400x1385.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php63DD.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :48profile imge saved to :./uploads/48/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Thabo', 'Thibos', 'zoo', 'katlego@mitconsulting.co.za', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/48/afm-logo-vector-1400x1385.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php4054.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :49profile imge saved to :./uploads/49/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Thabo', 'Thibos', 'zoo', 'katlego@mitconsulting.co.za', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/49/afm-logo-vector-1400x1385.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php8D9A.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :50profile imge saved to :./uploads/50/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Thabo', 'Thibos', 'zoo', 'katlego@mitconsulting.co.za', '11-01-1988', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/50/afm-logo-vector-1400x1385.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpC13D.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :51profile imge saved to :./uploads/51/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Lee', 'Ntimane', 'Lees', 'l.colertte@gmail.com', '11-09-1991', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/51/afm-logo-vector-1400x1385.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => afm-logo-vector-1400x1385.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php38CC.tmp
+            [error] => 0
+            [size] => 217706
+        )
+
+)
+get id :52profile imge saved to :./uploads/52/afm-logo-vector-1400x1385.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Katlego Ntimane', 'Ntimane', 'Lees', 'ntimaneskl@gmail.com', '11-09-1991', 'Male', 'Photography', 'Black and White', 'Aerial (Drone)', './uploads/52/afm-logo-vector-1400x1385.png', '123456', '')Array
+(
+    [profile_img] => Array
+        (
+            [name] => Arrows-Left-icon.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpDD70.tmp
+            [error] => 0
+            [size] => 727
+        )
+
+)
+get id :53profile imge saved to :./uploads/53/Arrows-Left-icon.pngNew record created successfullyinsert new user :INSERT INTO `users`(`name`, `surname`, `company_name`, `email`, `dob`, `gender`, `content_type`, `which_photography`, `which_photography1`, `profile_img`, `password`, `user_type`)VALUES ('Toets', 'Toets', 'Toets', 'l.colertte@gmail.com', '19-09-1000', 'Male', 'Photography', 'Advertisement', 'Aerial (Drone)', './uploads/53/Arrows-Left-icon.png', '123456', '')

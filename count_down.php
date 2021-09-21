@@ -118,17 +118,18 @@ $url = str_replace("signup_page.php","",$url);
 }
 
 #logo {
-    font-family: 'Bahnschrift', Courier, monospace;
+  font-family: 'Bahnschrift', Courier, monospace;
     cursor: pointer;
     padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-weight:bold;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    font-weight: bold;
     color: #fff;
     position: absolute;
-    top:-20px;
+    top: -14px;
     margin-left: 40%;
     z-index: 12;
+    font-size: 52px;
 }
 #signup_form{
 	width: 50%;
@@ -195,18 +196,18 @@ select {
 }
 #demo{
     position: absolute;
-    top:50px;
+    top:134px;
     margin-left: 38%;
-    font-size:30px;
     z-index:11;
-    font-size:40px;
-    font-weight:bold;
-    color:#1a3fe2;
+    font-size:58px;
+    font-weight:700;
+    color:#fff;
+    font-family: Helvetica;
 }
 #Sign_up{
     position: absolute;
     top:450px;
-    left: 30%;
+    left: 14%;
     font-size:60px;
     z-index:10;
     color:#fff;
@@ -215,14 +216,16 @@ select {
     font-size:40px;
     min-height: 40px;
     border-radius:40px;
-    background-color:#1a3fe2;
-    opacity: 0.5;
+    background-color:#3770DE;
     color:#fff;
     padding:30px;
 }
 #Sign_up button:hover{
     color:#000;
     opacity: 0.7;
+}
+.logo_temp{
+  height: 40px;
 }
 @media only screen and (width: 580px) {
     .home_image{
@@ -278,7 +281,7 @@ select {
 
 
   </header>
-  <!DOCTYPE HTML>
+
   <html>
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -289,16 +292,18 @@ select {
     margin-top: 0px;
   }
   </style>
+
+
   </head>
   <body>
+    <div class="logo_temp">
     <center><h1 id="logo">Blue Novelty</h1></center>
-
-
+  </div>
   <p id="demo"></p>
 
   <script>
   // Set the date we're counting down to
-  var countDownDate = new Date("Sep 20, 2021 15:37:25").getTime();
+  var countDownDate = new Date("Sep 30, 2021 15:37:25").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -327,7 +332,7 @@ select {
   }, 1000);
   </script>
   <center><a href="./signup_page.php" id="Sign_up">
-  Are you a creative?<br><button>SIGN UP</button></a></center>
+  Are you a Photographer/Videographer?<br><button>Sign Up</button></a></center>
   <br><br>
   <?php include('./slider_img_count.php');?>
   </body>
